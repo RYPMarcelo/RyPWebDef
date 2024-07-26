@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {	
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+	
+a{	
+    text-decoration: none;
+	color: inherit;
+}
+
+.header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.6);
+	background: rgba(156, 231, 231, 0.9);/*color de fondo del box*/
+	padding: 0px;
+}
+
+ul{
+	display: flex;
+}
+
+li{
+	list-style: none;
+	font-size: 35px;
+	margin: 10px ;
+}
+body{
+	width: 100%;
+	background-image:url("../img/probando-imagen.webp") ;
+}
+
+.wrapper {
+	width: 90%;
+	overflow:hidden;
+}
+
+a:hover{
+	color:blue
+}
+
+nav {
+	float:right; /* Desplazamos el nav hacia la derecha */
+	padding: 25px 10px 0px 0px;
+}
+
+nav ul {
+	list-style: none;
+	overflow: hidden; /* Limpiamos errores de float */
+}
+
+nav ul li {  /* cambia tipo y tamaño de letras */
+	float:right;
+	font-family:'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;;
+	font-size: 25px;    
+    padding: 10;
+}
+
+nav ul li a {
+	display: inline block; /* Convertimos los elementos a en elementos bloque para manipular el padding */
+	color:rgb(17, 14, 14);
+	text-decoration: none;
+	font-size: 80%;
+    display: inline-block;
+    padding: 5px;
+}
+
+.content-figura img{
+	position: inherit;
+	box-sizing:content-box ;
+	height: 110px;
+	width: 140px;
+	padding: 5px;
+	
+	/*box-shadow: 0px 0px 10px 0px black;*/
+	transition: all 300ms;
+}
+.content-figura img:hover{
+	transform: scale(1.2);
+	transition: all 300ms;
+	box-shadow: 0px 0px 10px 0px black;
+}
+.content-all{
+	width: 100%;
+	perspective: 1000px;
+}
+
+.content-figura{
+	width: 100%;
+	height: 100%;	
+	transform-style: preserve-3d;
+}
+
+.content-figura figure{
+	width: 100%;
+	height: 120px;
+}
+
+.content-figura:hover{
+	cursor:pointer;
+}
+
+h1{
+	text-align: center;
+	font-size: 50px;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	margin-top: 60px;
+	color: rgb(9, 19, 107);
+	text-shadow: 0px 0px 6px black;
+}
+

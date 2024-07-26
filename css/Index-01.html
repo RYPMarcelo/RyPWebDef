@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!--iconos de la web-->
+		
+		<!--sliders de la web debe ir por obligacion para ejecutar jquery-->
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  		<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+		
+		<!--referencia a iconos font awasome
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awasome/5.13.0/css/all.min.css" ref = "stylesheet"></script>-->
+		
+		<!--awesome-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+		<!--style personales-->
+		<link rel="stylesheet" href="style.css"/>
+		<link rel="stylesheet" href="style-slider.css"/>
+		<link rel="stylesheet" href="style-menu.bar.css"/>
+		
+
+		<!--<script defer src="./eliminarEventos.js"></script>-->
+		<title>Comercializadora R&P</title>
+	</head>
+	<body>
+				
+		<!--Header del menu
+		En esta seccion se da comienzo a la estructura de la pagina
+		empesamos definiendo una cabezera con  un menu de navegacion
+		que nos indica las opciones que tendra y su logo de empresa
+		de forma ( RESPONCIVE )-->
+		<header>
+			<div class="container_header">
+				<!--Logo del menu de inicio de la Empresa-->
+				<div class="menu">
+					<nav>
+						<!--Se incorpora el icono ( fa-solid fa-bars) para la barra reponsive-->
+						<input type="checkbox" id="check">
+						<label for="checkbox" class="checkbtn">
+							<i class="fa-solid fa-bars"></i>
+						</label>
+
+						<!--Incorporacion del logo de la empresa-->
+						<a	href ="#" class ="enlace">
+							<img src="../img/logoryp-01.png" alt="" class="logo">				
+						</a>
+						<ul>
+							<!--Se indica una clase para dar con el boton remarcado al inicio-->
+							<li><a class="active" href	="#">Quines somos?</a></li>
+							<li><a href	="#">Rubros</a></li>
+							<li><a href	="#">Catalogos</a></li>
+							<li><a href	="#">Contacto</a></li>
+						</ul>
+					</nav>
+					<!--Agregamos un boton adicional al menu que indica ir a la seccion cotizar-->
+					<a href="#" class="boton_cotizar">Contacto</a>
+
+					<!--Se agregan dos  iconos de redes sociales
+					<div class="socialMedia">
+						<a href = "#">
+							<img src="../ico/facebook-logo.png" alt="">
+						</a>
+						<a href = "#">
+							<img src="../ico/whatsapp-logo.png" alt="">
+						</a>
+					</div>-->
+				</div>
+			</div>
+		</header>
+		
+		<main>
+			<!-- INICIO -->
+			<!-- PORTADA DE INICIO quien la empresa-->
+			<div class ="container-cover"> <!--div offset-->
+				<div class ="cover">
+					<section class="text-cover">
+						<h1>Trabajo inteligentemente con infinitas posibilidades</h1>
+						<p>khkjkfhg kdfjhgkfjkdsjdf sdkfkgsdhfkhgkjdf kjihfhrufrufrurf jrfhiurhfrufhruf jherugfruyfguer
+						iuhriufhieruhiheir juerugferygfeurygfuer ekruhfieurgeurygueyr.</p>
+						<a href="" class ="boton-text-cover boton-text">Contacto</a>
+						<!--Linea de Tiemppo-->
+						<section class ="image-cover-fondo-linea">
+							<img src="../IMAGES PRUEBA/linea-tiempo-historia-01.png" alt="">
+							<img src="../IMAGES PRUEBA/linea-tiempo-historia-02.png" alt="">
+							<img src="../IMAGES PRUEBA/linea-tiempo-historia-03.png" alt="">
+						</section>
+						<section class ="image-linea-titulo">
+							<p>Probando seccion de titulos</p>
+						</section>
+						<section class ="image-linea-titulo">
+							<p>Titulo prueba segundo</p>
+						</section>
+					</section>
+					
+					<section class ="image-cover-fondo">
+						<!--<img src="../IMAGES PRUEBA/images-fondo-03.jpg" alt="">-->
+					</section>
+				</div>
+			</div>	
+
+			<!-- generador de confianza pagina dos-->
+			<div class="container-trust container-card-primary">
+				<div class="trust card-primary">
+					<div class="text-trust text-card-primary">
+						<p>QUE HACEMOS EN NUESTRA EMPRESA ?</p>
+						<h1>Nuestros Principales Rubros</h1>
+					</div>
+					<div class="container-trust container-box-cardPrimary">
+						<div class="card-trust box-card-primary">
+							<img src="../img/imagen-corporativo-01.jpg" alt="">
+							<h2>Vestuario Corporativo</h2>
+							<p>jjgjdgfddjkkdfasdn kjhkdjhkjsdf jhksdhfjdkhfk kjsdkjfsdj kjshdjfjhjgshgdjf jhsdgjgfhjgjhd jhagsjdghfjhd</p>
+						</div>
+						<div class="card-trust box-card-primary">
+							<img src="../img/fondo-bordado-02.jpg" alt="">
+							<h2>Bordado Industrial</h2>
+							<p>Los elementos de Seguridad son de ultima tecnologia y con los estandares mas altos con sus respectivas certificaciones</p>
+						</div>
+						<div class="card-trust box-card-primary">
+							<img src="../ico/ico-card-05.png" alt="">
+							<h2>Transporte</h2>
+							<p>jjgjdgfddjkkdfasdn kjhkdjhkjsdf jhksdhfjdkhfk kjsdkjfsdj kjshdjfjhjgshgdjf jhsdgjgfhjgjhd jhagsjdghfjhd</p>
+						</div>
+						<div class="card-trust box-card-primary">
+							<img src="../ico/ico-card-05.png" alt="">
+							<h2>Ferreteria Industrial Epp</h2>
+							<p>jjgjdgfddjkkdfasdn kjhkdjhkjsdf jhksdhfjdkhfk kjsdkjfsdj kjshdjfjhjgshgdjf jhsdgjgfhjgjhd jhagsjdghfjhd</p>
+						</div>
+					</div>			
+				</div>
+			</div>
+
+			<!--Creacion del slider de rubros a cuales trabajamos
+			Este se puede utilizar con distintos tipos de imagenes a representar-->
+			<div class="slider-container">
+				<div class="slider">
+					<div class="slider-text">
+						<p>QUE HACEMOS EN NUESTRA EMPRESA ?</p>
+						<h1>Nuestros Principales Rubros</h1>
+					</div>
+					<div class="slider-images">
+						<div class="slider-img">
+							<img src="../IMAGES PRUEBA/Agroindustria.png" alt="1">
+							<h1></h1>
+							<div class="details">
+								<h2>Agroindustria</h2>
+								<p>web3 developer</p>
+							</div>	
+						</div>	
+						<div class="slider-img">
+							<img src="../IMAGES PRUEBA/Bodegaje.png" alt="2">
+							<h1></h1>	
+							<div class="details">
+								<h2>Bodegaje</h2>
+								<p>web3 developer</p>
+							</div>
+						</div>
+						<div class="slider-img">
+							<img src="../IMAGES PRUEBA/Comercio.png" alt="3">
+							<h1></h1>	
+							<div class="details">
+								<h2>Comercio</h2>
+								<p>web3 developer</p>
+							</div>
+						</div>
+						<div class="slider-img">
+							<img src="../IMAGES PRUEBA/Construccion.png" alt="4">
+							<h1></h1>
+							<div class="details">
+								<h2>Construccion</h2>
+								<p>web3 developer</p>
+							</div>	
+						</div>
+						<div class="slider-img active">
+							<img src="../IMAGES PRUEBA/Logistica.png" alt="5">
+							<h1></h1>	
+							<div class="details">
+								<h2>Logistica</h2>
+								<p>web3 developer</p>
+							</div>
+						</div>
+						<div class="slider-img">
+							<img src="../IMAGES PRUEBA/Mineria.png" alt="6">
+							<h1></h1>	
+							<div class="details">
+								<h2>Mineria</h2>
+								<p>web3 developer</p>
+							</div>
+						</div>
+						<div class="slider-img">
+							<img src="../IMAGES PRUEBA/Obras-Civiles.png" alt="7">
+							<h1></h1>	
+							<div class="details">
+								<h2>Obras-Civiles</h2>
+								<p>web3 developer</p>
+							</div>
+						</div>
+						<div class="slider-img">
+							<img src="../IMAGES PRUEBA/Pesca.png" alt="8">
+							<h1></h1>	
+							<div class="details">
+								<h2>Pesca</h2>
+								<p>web3 developer</p>
+							</div>
+						</div>
+						<div class="slider-img">
+							<img src="../IMAGES PRUEBA/Quimicas.png" alt="9">
+							<h1></h1>	
+							<div class="details">
+								<h2>Quimica</h2>
+								<p>web3 developer</p>
+							</div>
+						</div>
+					
+					
+						<!--
+						<div class="slider-img">
+							<img src="../IMAGES PRUEBA/Retail.png" alt="10"><<<<
+							<h1>Agro</h1>	
+						</div>
+						<div class="details">
+							<h2>Agro</h2>
+							<p>web3 developer</p>
+						</div>
+						<div class="slider-img">
+							<img src="../IMAGES PRUEBA/Turismo-y-HOTEL.png" alt="11">
+							<h1>Agro</h1>	
+						</div>
+						<div class="details">
+							<h2>Agro</h2>
+							<p>web3 developer</p>
+						</div>
+						<div class="slider-img">
+							<img src="../IMAGES PRUEBA/Telecomunicaciones.png" alt="12">
+							<h1>Agro</h1>	
+						</div>
+						<div class="details">
+							<h2>Agro</h2>
+							<p>web3 developer</p>
+						</div>-->
+					
+					</div>
+				</div>
+			</div>		
+			<!-- Etiqueta Sobre la empresa-->
+			<div class="container-about div-offset">
+				<div class="about">
+					<div class="text-about">
+						<h1>Equipo mas Innovador</h1>
+						<p>xhfksflbkjslkfb kfhbjdfbd kjdfhkjhvdfjhd jdhfkgjsdhfkjhkg jshdjghdjfhgjsd jdshjhg jhgdjhdsgfjfsdhg
+							sdgsdgdsfgsd jsdjhsgdfjd jashdjhsdgjf jasgdjfhgjsdgf jhasgdfjghsd
+							dfgsdfgdfsgdf
+						</p>
+						<a href="#" class="boton-text-about boton-text">Saver mas</a>
+					</div>
+					<div class="image-about">
+						<img src="../img/imagen-07.jpg" alt="">
+						<img src="../img/fondo-manos-01.jpg" alt="">
+					</div>			
+				</div>
+			</div>
+			<!--Seccion de Servicios-->
+			<div class="container-service container-card-primary div-offset">
+				<div class="service card-primary">
+					<!--Creacion de titulo primario de la pagina-->
+					<div class="text-service text-card-primary">
+						<p>Que Hacemos en Nuestra Empresa</p>
+						<h1>Servicios para resolver todo tipo de problemas Empresariales</h1>
+					</div>
+					<!-- Creacion de los blok-->
+					<div class="container-car-service container-box-cardPrimary">
+						<div class="card-service box-card-primary">
+							<img src="../img/modelado-3d.png" alt="">
+							<h2>Control Empresarial completo</h2>
+							<p>kskdfk dskfhkhkjhkh fsdfkjhhdsf kjhkhkjhkhsd kjhkjhkjhf df sfsdfsdf df sdfsdfsdfsdfsdd</p>
+							<a href="#">
+								<i class="fa-sharp fa-solid fa-arrow-right"></i>
+							</a>
+							<!--<a href="https://www.flaticon.es/iconos-gratis/3d" title="3d iconos">3d iconos creados por berkahicon - Flaticon</a>-->								
+						</div>
+							
+						<div class="card-service box-card-primary">
+							<img src="../img/modelado-3d.png" alt="">
+							<h2>Control Empresarial completo</h2>
+							<p>kskdfk dskfhkhkjhkh fsdfkjhhdsf kjhkhkjhkhsd kjhkjhkjhf df sfsdfsdf df sdfsdfsdfsdfsdd</p>
+							<a href="#">
+								<i class="fa-sharp fa-solid fa-arrow-right"></i>
+							</a>
+							<!--<a href="https://www.flaticon.es/iconos-gratis/3d" title="3d iconos">3d iconos creados por berkahicon - Flaticon</a>-->
+	
+						</div>
+						<div class="card-service box-card-primary">
+							<img src="../img/modelado-3d.png" alt="">
+							<h2>Control Empresarial completo</h2>
+							<p>kskdfk dskfhkhkjhkh fsdfkjhhdsf kjhkhkjhkhsd kjhkjhkjhf df sfsdfsdf df sdfsdfsdfsdfsdd</p>
+							<a href="#">
+								<i class="fa-sharp fa-solid fa-arrow-right"></i>
+							</a>
+							<!--<a href="https://www.flaticon.es/iconos-gratis/3d" title="3d iconos">3d iconos creados por berkahicon - Flaticon</a>-->	
+						</div>
+						<div class="card-service box-card-primary">
+							<img src="../img/modelado-3d.png" alt="">
+							<h2>Control Empresarial completo</h2>
+							<p>kskdfk dskfhkhkjhkh fsdfkjhhdsf kjhkhkjhkhsd kjhkjhkjhf df sfsdfsdf df sdfsdfsdfsdfsdd</p>
+							<a href="#">
+								<i class="fa-sharp fa-solid fa-arrow-right"></i>
+							</a>
+							<!--<a href="https://www.flaticon.es/iconos-gratis/3d" title="3d iconos">3d iconos creados por berkahicon - Flaticon</a>-->	
+						</div>
+						<div class="card-service box-card-primary">
+							<img src="../img/modelado-3d.png" alt="">
+							<h2>Control Empresarial completo</h2>
+							<p>kskdfk dskfhkhkjhkh fsdfkjhhdsf kjhkhkjhkhsd kjhkjhkjhf df sfsdfsdf df sdfsdfsdfsdfsdd</p>
+							<a href="#">
+								<i class="fa-sharp fa-solid fa-arrow-right"></i>
+							</a>
+							<!--<a href="https://www.flaticon.es/iconos-gratis/3d" title="3d iconos">3d iconos creados por berkahicon - Flaticon</a>-->								
+						</div>
+						<div class="card-service box-card-primary">
+							<img src="../img/modelado-3d.png" alt="">
+							<h2>Control Empresarial completo</h2>
+							<p>kskdfk dskfhkhkjhkh fsdfkjhhdsf kjhkhkjhkhsd kjhkjhkjhf df sfsdfsdf df sdfsdfsdfsdfsdd</p>
+							<a href="#">
+								<i class="fa-sharp fa-solid fa-arrow-right"></i>
+							</a>
+							<!--<a href="https://www.flaticon.es/iconos-gratis/3d" title="3d iconos">3d iconos creados por berkahicon - Flaticon</a>-->
+						</div>
+					</div>
+				</div>			
+			</div>
+		</main>
+	</body>
+
+
+	<!--Ejecucion de slider en movimiento-->
+	<script src="js/jQuery,js"></script>
+	<script>
+		jQuery(document).ready(function($){
+			$('.slider-img').on('click',function(){
+				$('.slider-img').removeClass('active');
+				$(this).addClass('active')
+			})
+		})
+	</script>
+</html>

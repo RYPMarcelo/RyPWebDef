@@ -1,0 +1,225 @@
+/*Estilos de paginas de Contactos enlazado con google maps*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    background: linear-gradient( /* se define el color de fondo del tooltips ( degradado en gris*/
+		90deg, #859398 20%,
+        rgb(240, 245, 245)40%);
+}
+
+body h1 {
+    font-family:'Montserrat',sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    font-style: italic;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.form-box .ocultar-label {
+    visibility: hidden;
+}
+.form-box i {
+    display: none;
+}
+.form-box p {
+    display: none;
+}
+
+
+
+
+
+/*Diseño Anterior actual by pizarro*/
+.contac-in {
+    width: 75%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    padding: 10px;
+    border-radius: 20px;
+    background: #f8f4f4;
+    box-shadow: 0px 0px 10px 0px #666;
+}
+
+.contac-map {
+    width: 100%;
+    height: auto;
+    flex: 50%;
+}
+
+.contac-map iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.contac-form {
+    width: 100%;
+    height: auto;
+    flex: 50%;
+    padding: 30px;
+    text-align: center; /*Centra todo el contenido dentro del BOX */
+}
+
+.contac-form h1 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.contac-form-txt {
+    width: 100%;
+    height: 40px;
+    color: #000;
+    border: 1px solid #bcbcbc;
+    border-radius: 10px;
+    outline: none;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.contac-form-txt::placeholder{
+    color:#aaa;
+}
+
+.contac-form-textarea {
+    width: 100%;
+    height: 120px;
+    color: #000;
+    border: 1px solid #bcbcbc;
+    border-radius: 10px;
+    outline: none;
+    margin-bottom: 20px;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contac-form-textarea::placeholder{
+    color: #aaa;
+}
+
+.contac-form-btn{
+    width: 100%;
+    border: none;
+    outline: 1px solid;
+    border-radius: 50px;
+    background: #8e2de2;
+    color: #3ec439;
+    text-transform: uppercase;
+    padding: 10px 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.form button:disabled {
+    background: #82a0a2;
+    border: 1px solid #82a0a2;
+    color: lightgrey;
+}
+
+.form-box.form-error input{
+    border-bottom: 2px solid red;
+}
+.form-box.form-error .error-text{
+    visibility: visible;
+}
+
+.form-box.form-success input{
+    border-bottom: 2px solid rgb(93, 248, 22);
+}
+
+/*.contac-form-btn:hover {
+    color:black;
+    outline: 1px solid rgb(17, 248, 248);
+    box-shadow: 0px 0px 10px 0px #666;
+}*/
+
+
+/* Se optiene el focus de cada input*/
+.contac-form-txt:focus,
+.contac-form-textarea:focus {
+    outline: 1px solid rgb(17, 248, 248);
+    box-shadow: 0px 0px 10px 0px #666;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Creacion de un tooltips Bypizarro*/
+.toolstips-1 {
+    position: relative;
+}
+
+.toolstips-1::after,
+.toolstips-1::before{
+    content: '';
+    position:absolute;
+    background: linear-gradient( /* se define el color de fondo del tooltips ( degradado*/
+		90deg, #35c6fa 20%,
+        rgb(170, 175, 175)40%);
+    height: auto;
+    width: fit-content;
+    top: 0; /*indica la posicion del cuadrado */
+    left: 60px; /* Indica la posicion del tooltips  centrado a la imagen*/
+    transform: translate(-50%,100%);
+    transition: 1s ease-in-out transform;
+    box-shadow: 0px 6px 50px 5px rgba(38, 38, 71, 0.8);/* genera una sombra al tooltips */
+}
+ 
+.toolstips-1::before{
+    font-size: 14px; /* Tamaño del font */
+    content: attr(data-tooltips);/*se Obtiene el texto del tooltip*/
+    color:rgb(10, 10, 10);  /* Color del Font*/
+    line-height: auto;
+    top: -23px;
+    padding: 16px ;
+    border-radius: 15px; /* bordes redondeados del tooltips */
+    transform: translate(-50%,-100%) scale(0);
+    transform-origin: bottom;
+}
+
+.toolstips-1:hover::after{
+    transform: translate(-50%,-150%) rotate(45deg) scale(1);
+}
+
+.toolstips-1:hover::before{
+    transform: translate(-50%,-100%) scale(1);
+}
+
+.toolstips-1.desactive{
+    display: none;
+}
+

@@ -1,0 +1,70 @@
+
+/*Confeccion de un scroll secuencial con esquinas degradadas o defusivas */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {    
+    background: #f2f2f2
+}
+
+/* inicia el siclo de moviento de imagenes */
+@keyframes slide {
+    form{
+        transform: translateX(0);
+    }
+    to { transform: translateX(-100%);
+    }
+}
+
+.logos {
+    overflow: hidden;
+    padding: 50px 0;
+    background:white; /* se define el color de fondo del Box*/
+    white-space: nowrap;
+    position: relative;
+}
+
+
+/*define el antes y despues de una entrada y saliada
+ de un box con esquinas degradadas en colores*/
+.logos:before,
+.logos:after {
+    position: absolute;
+    top: 0;   
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+ }
+
+.logos:before {
+    left: 0;
+    background: linear-gradient(to left,rgba(15, 14, 14, 0),rgb(121, 115, 115));
+}
+
+.logos:after {
+    right: 0;
+    background: linear-gradient(to right,rgba(15,14,14,0),rgba(121,115,115));
+}
+
+/* se da una pausa de imagen cuando el mouse se posiciona de lante de ina imagen */
+.logos:hover .logos-slide {
+    animation-play-state:paused;
+}
+
+/* se da inicion al movimiento de las imagenes, se hace un (display: inline-block),
+ para no perder continuidad de las images*/
+.logos-slide {
+    display: inline-block;
+    animation: 10s slide infinite linear;
+}
+
+/* se define tamaño de imagen y margenes */
+.logos-slide img {
+    height: 80px;
+    margin: 0 20px;
+}

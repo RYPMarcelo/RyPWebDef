@@ -1,0 +1,91 @@
+
+
+/*Definicion de style icon hover tools tips By mpl*/
+*{
+    padding: 0;
+    margin: 0;    
+}
+
+.container-tools{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.demo {
+    /* Este es el contenedor principal */
+    display: inline-block;/*  (el inline-block las despliega en linea)*/
+    left: 200px;
+}
+
+.demo a {
+    display: inline-block; /*Coloca las imagenes de forma hacia abajo    (el inline-block las despliega en linea)*/
+
+    /* Definicion de la imagen color, tamaño, borde puntas o circulo */ 
+    text-decoration: none; /* saca los guines de las imagenes */
+    width: 85px; /* Tamaño del contenedor de la imagen  width-height*/
+    height: 85px;
+    line-height: 80px; /* Centra la imagen dentro del circulo */
+    color:rgb(241, 238, 11); /* Color de inicio de imagen */
+    margin-right: 150px; /* ceparacion entre los iconos hacia la derecha */
+    text-align: center; /* Imagen centrada */
+    background-color: rgb(24, 26, 129); /* color de fondo de imagen */
+    border-radius: 50px; /* genera una circunferencia */
+    margin-bottom: 100px; /* hace una separacion entre las opciones de <a> */    
+}
+
+.toolstips {
+    position: relative;
+}
+
+.toolstips::after,
+.toolstips::before{
+    content: '';
+    position:absolute;
+    background: linear-gradient( /* se define el color de fondo del tooltips ( degradado en gris*/
+		90deg, #859398 20%,
+        rgb(240, 245, 245)40%);
+    height: auto;
+    width: fit-content;
+    top: 0; /*indica la posicion del cuadrado */
+    left: 50px; /* Indica la posicion del tooltips  centrado a la imagen*/
+    transform: translate(-50%,100%);
+    transition: 1s ease-in-out transform;
+    box-shadow: 0px 6px 50px 5px rgba(8, 8, 15, 0.8);/* genera una sombra al tooltips */
+}
+ 
+.toolstips::before{
+    font-size: 27px; /* Tamaño del font */
+    content: attr(data-tooltips);/*se Obtiene el texto del tooltip*/
+    color:rgb(59, 50, 50);  /* Color del Font*/
+    line-height: auto;
+    top: -23px;
+    padding: 15px;
+    border-radius: 15px; /* bordes redondeados del tooltips */
+    transform: translate(-50%,-100%) scale(0);
+    transform-origin: bottom;
+}
+
+.toolstips::after{
+    /*genera la pestaña del tooltips y la rota en 45 grados*/
+    background: rgb(222, 224, 224)40%;
+    height: 20px; /* definicion del tamaño de la pestaña 20x20 */
+    width: 20px;
+    transform: translate(-50%,-150%) rotate(45deg) scale(0);
+    transform-origin: top;
+}
+
+.toolstips:hover::after{
+    transform: translate(-50%,-150%) rotate(45deg) scale(1);
+}
+
+.toolstips:hover::before{
+    transform: translate(-50%,-100%) scale(1);
+}
+
+.demo a:hover {
+    color:white;     /* Cambia el color de la imagen cuando el cursor pasa por encima */
+}
+

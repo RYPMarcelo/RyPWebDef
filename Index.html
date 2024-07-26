@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!--iconos de la web-->
+		
+		<!--sliders tipo fotos encasilladas (box) de la web debe ir por obligacion para ejecutar jquery-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  		<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+		
+		<!--awesome-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		
+		<!--boottrasp diseñps ya establecidos en este caso utilizo slider-->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+		
+		<!--style personales-->
+		<link rel="stylesheet" href="style.css"/>
+		<link rel="stylesheet" href="style-slider.css"/>
+		<link rel="stylesheet" href="style-menu-bar.css"/>
+		<link rel="stylesheet" href="style-scroll.css"/>
+		<link rel="stylesheet" href="style-footer.css"/>
+		<link rel="stylesheet" href="style-icon-hover.css"/>
+
+		
+		<!--<script defer src="./eliminarEventos.js"></script>-->
+		<title>Comercializadora R&P</title>
+	</head>
+	<body>
+				
+		<!--Header del menu
+		En esta seccion se da comienzo a la estructura de la pagina
+		empesamos definiendo una cabezera con  un menu de navegacion
+		que nos indica las opciones que tendra y su logo de empresa
+		 de forma ( RESPONCIVE )-->
+		<header>
+			<div class="content">
+				<!--Logo del menu de inicio de la Empresa-->
+				<div class="menu container">
+					
+					<!--Se incorpora el icono ( fa-solid fa-bars) para la barra reponsive-->
+ 					<a href ="index.html" class ="enlace"></a>
+
+					<!--imagen logo empresa-->
+					<img src ="../img/logoryp-300x140-01.png" class="menu-ppal" alt="">	
+
+					<h1></h1>		
+
+					<input type="checkbox" id="menu">
+					<label for="menu">
+						<!--Logo corporativo de Empresa para barra de menu-->		
+						<img src ="" class="menu-icono" alt="">	
+
+						<!--Icono de barra Responcive-->		
+						<i class="fa-solid fa-bars"></i>
+					</label>
+					<nav class="navbar"	>
+						<ul>
+							<!--Se indica una clase para dar con el boton remarcado al inicio-->
+							<li><a class="active" href="index.html">Inicio</a></li>
+							<li><a href	="#">Rubros</a></li>
+							<li><a href	="#">Catalogos</a></li>
+							<li><a href	="contacto.html">Contacto</a></li>
+						</ul>
+					</nav>
+					<!--Agregamos un boton adicional al menu que indica ir a la seccion cotizar
+					<a href="#" class="boton_cotizar">Contacto</a>-->
+
+					<!--Se agregan dos  iconos de redes sociales
+					<div class="socialMedia">
+						<a href = "#">
+							<img src="../ico/facebook-logo.png" alt="">
+						</a>
+						<a href = "#">
+							<img src="../ico/whatsapp-logo.png" alt="">
+						</a>
+					</div>-->
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<!-- INICIO -->
+			<!-- PORTADA DE INICIO quien la empresa-->
+			<div class ="container-cover"> <!--div offset-->
+				<div class ="cover">
+
+					<section class="text-cover">
+						<!--Titulo Principal Pagina
+						<h1>Trabajo inteligente con infinitas posibilidades</h1>-->
+						<h1>Nuestro Principal Compromiso Es Entregar Servicio Eficiente y De Calidad</h1>
+
+						<!--Texto segundario -->
+				
+
+						<p> Nuetra historia: somos una empresa familiar que con esfuerzo dedicacion, pasion y compromiso hemos ido creciendo,
+							 generarando confianza en nuestros clientes.
+							 
+							 nos caracterizamos por tener una larga y basta trayectoria por la calidad de nuestros productos
+							 en los distintos rubros que abarca nuestra empresa
+								
+							El ADN es la puntualidad </p>
+
+
+						<p>-   	Nuestra historia							
+							se caracteriza por tener una larga y basta trayectoria dedicada a distintos rubros,
+						ya que somos una empresa familiar y con mucho esfuerzo, pasión y compromiso hemos ido creciendo gracias al compromiso
+						de generar confianza para asi poder dar cumplimientos a todos los requerimientos
+					 	nuestros Clientes</p>
+
+						<!--Linea de Tiemppo-->
+						<section class ="image-cover-fondo-linea">
+							<img src="../IMAGES PRUEBA/linea-tiempo-historia-01.png" alt="">
+							<img src="../IMAGES PRUEBA/linea-tiempo-historia-02.png" alt="">
+							<img src="../IMAGES PRUEBA/linea-tiempo-historia-03.png" alt="">
+						</section>
+						
+						<!--- Creacion de Imagenes con Tooltips-->
+						<div class="container-tool">
+							<div class="demo toolstips" 
+								data-tooltips="+56989202496 +56956262360">
+								<a href="" class="fa-brands fa-whatsapp" 
+									style="font-size:60px;">
+								</a>
+							</div>
+							<div class="demo toolstips" data-tooltips="+56989202496">
+								<a href="" class="fa-solid fa-phone-volume" style="font-size:48px;">
+								</a>
+							</div>
+
+							<div class="demo toolstips" data-tooltips="ventas@comercializadoraryp.cl"><a href="" class="fa-regular fa-envelope" style="font-size:50px;"></a></div>
+						</div>
+					</section>
+				</div>
+			</div>
+				<!-- Ejes de la Empresa pagina dos-->
+				<div class="trust card-primary">
+					<div class="text-trust text-card-primary">
+						<!--Titulo de pagina-->
+						<p>QUE HACEMOS EN NUESTRA EMPRESA ?</p>
+						<h1>Ejes Principales</h1>
+					</div>
+
+					<div class="container-trust container-box-cardPrimary">
+						<div class="card-trust box-card-primary">
+							<img src="../img/imagen-corporativo-01.jpg" alt="">
+							<h2>Vestuario Corporativo</h2>
+							<p>jjgjdgfddjkkdfasdn kjhkdjhkjsdf jhksdhfjdkhfk kjsdkjfsdj kjshdjfjhjgshgdjf jhsdgjgfhjgjhd jhagsjdghfjhd</p>
+						</div>
+
+						<div class="card-trust box-card-primary">
+							<img src="../img/fondo-bordado-02.jpg" alt="">
+							<h2>Bordado Industrial</h2>
+							<p>Nuestra empresa ademas cuenta con Bordados propios y maquinaria de vanguardia para resaltar la imagen
+								corporativa de tu empresa y en prendas personalizadas.</p>
+						</div>
+
+						<div class="card-trust box-card-primary">
+							<img src="../IMAGES PRUEBA/camion-03.jpg" alt="">
+							<h2>Cobertura</h2>
+
+							<p>Nuestra empresa cuenta con despacho dentro y fuera 
+							de nuestra region, consta con una logistica tanto para 
+							retiro y entrega de mercaderia logrando asi cumplir con 
+							plazos de entrega a nuestros clientes.</p>
+						</div>
+
+						<div class="card-trust box-card-primary">
+							<img src="../IMAGES PRUEBA/ferre-indus-01.jpg" alt="">
+							<h2>Ferreteria Industrial ( EPP )</h2>
+							<p>Los elementos de Seguridad (EPP) son de ultima tecnologia y con los estandares mas altos, 
+								además entregando cada elemento con sus respectivas certificaciones de calidad.</p>
+						</div>
+					</div>			
+				</div>
+			</div>
+
+			<!--Creacion del slider de rubros a cuales trabajamos
+			Este se puede utilizar con distintos tipos de imagenes a representar tipo (BOX)-->
+			<div class="slider-container">
+				<div class="slider">
+					<div class="slider-text">
+						<p>Rubros principales ?</p>
+						<h1>Equipamiento para los Principales Rubros</h1>
+					</div>
+					<div class="slider-images">
+						<div class="slider-img">
+							<img src="../IMAGES PRUEBA/Agroindustria.png" alt="1">
+							<h1></h1>
+							<div class="details">
+								<h2>Agroindustria</h2>
+								<p>web3 developer</p>
+							</div>	
+						</div>	
+						<div class="slider-img">
+							<img src="../IMAGES PRUEBA/Bodegaje.png" alt="2">
+							<h1></h1>	
+							<div class="details">
+								<h2>Bodegaje</h2>
+								<p>web3 developer</p>
+							</div>
+						</div>
+						<div class="slider-img">
+							<img src="../IMAGES PRUEBA/Comercio.png" alt="3">
+							<h1></h1>	
+							<div class="details">
+								<h2>Comercio</h2>
+								<p>web3 developer</p>
+							</div>
+						</div>
+						<div class="slider-img">
+							<img src="../IMAGES PRUEBA/Construccion.png" alt="4">
+							<h1></h1>
+							<div class="details">
+								<h2>Construccion</h2>
+								<p>web3 developer</p>
+							</div>	
+						</div>
+						<div class="slider-img active">
+							<img src="../IMAGES PRUEBA/Logistica.png" alt="5">
+							<h1></h1>	
+							<div class="details">
+								<h2>Logistica</h2>
+								<p>web3 developer</p>
+							</div>
+						</div>
+						<div class="slider-img">
+							<img src="../IMAGES PRUEBA/Mineria.png" alt="6">
+							<h1></h1>	
+							<div class="details">
+								<h2>Mineria</h2>
+								<p>web3 developer</p>
+							</div>
+						</div>
+						<div class="slider-img">
+							<img src="../IMAGES PRUEBA/Obras-Civiles.png" alt="7">
+							<h1></h1>	
+							<div class="details">
+								<h2>Obras-Civiles</h2>
+								<p>web3 developer</p>
+							</div>
+						</div>
+						<div class="slider-img">
+							<img src="../IMAGES PRUEBA/Pesca.png" alt="8">
+							<h1></h1>	
+							<div class="details">
+								<h2>Pesca</h2>
+								<p>web3 developer</p>
+							</div>
+						</div>
+						<div class="slider-img">
+							<img src="../IMAGES PRUEBA/Quimicas.png" alt="9">
+							<h1></h1>	
+							<div class="details">
+								<h2>Quimica y Farmacia</h2>
+								<p>web3 developer</p>
+							</div>
+						</div>
+					
+						<!--
+						<div class="slider-img">
+							<img src="../IMAGES PRUEBA/Retail.png" alt="10"><<<<
+							<h1>Agro</h1>	
+						</div>
+						<div class="details">
+							<h2>Agro</h2>
+							<p>web3 developer</p>
+						</div>
+						<div class="slider-img">
+							<img src="../IMAGES PRUEBA/Turismo-y-HOTEL.png" alt="11">
+							<h1>Agro</h1>	
+						</div>
+						<div class="details">
+							<h2>Agro</h2>
+							<p>web3 developer</p>
+						</div>
+						<div class="slider-img">
+							<img src="../IMAGES PRUEBA/Telecomunicaciones.png" alt="12">
+							<h1>Agro</h1>	
+						</div>
+						<div class="details">
+							<h2>Agro</h2>
+							<p>web3 developer</p>
+						</div>-->	
+					</div>
+				</div>
+			</div>
+		</main>
+
+
+			<!--Creacion de un scroll con  imagenes secuenciales y stop X imagen
+			 / con esquinas de gradadas o difusivas
+			IMAGENES DE MARCAS CON LAS CUALES LA EMPRESA TRABAJA-->
+			<!--<div class="container-scroll">  ver sis se ocupara esta clase a futuro? -->
+				<div class="logos">
+					<div class="logos-slide">
+						<img src="../marcas/3M.png">
+						<img src="../marcas/ACTIVEX.png">
+						<img src="../marcas/AIR.png">
+						<img src="../marcas/ALASKA.png">
+						<img src="../marcas/BATA-INDUSTRIAL.png">
+						<img src="../marcas/EDELBROCK.png" alt="1">
+						<img src="../marcas/HARDWORKWEAR.png">
+						<img src="../marcas/HELLY-HANSEN.png">
+						<img src="../marcas/KBEEN.png">
+						<img src="../marcas/MACK.png">
+						<img src="../marcas/MSA.png">
+						<img src="../marcas/NORSEG.png">
+						<img src="../marcas/PROFLEX.png">
+						<img src="../marcas/QUEBEC.png">
+					</div>
+				</div>
+				<script>
+					/*clonacion de una clase, para no copiar la clase completa de imagenas*/
+					var copy = document.querySelector(".logos-slide").cloneNode(true);
+					document.querySelector(".logos").appendChild(copy);
+				</script>
+			<!--</div>-->
+
+
+
+			<script src="script-carousel.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+			<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+		
+	</body>
+
+
+	<!--Ejecucion de slider en movimiento-->
+	<script src="js/jQuery.js"></script>
+	<script>
+		jQuery(document).ready(function($){
+			$('.slider-img').on('click',function(){
+			$('.slider-img').removeClass('active');
+			$(this).addClass('active')
+			})
+		})
+	</script>
+	
+
+	<!--Creacion del footer ( Pie de pagina ) de la empresa-->
+	<footer class="pie-pagina">
+		<div class="grupo-1">
+			<div class="box">
+				<figure>
+					<a href="#">
+						<img src="../IMAGES PRUEBA/IMAGEN-PERFILRYP.png" alt="Logo Empresa">
+					</a>
+				</figure>
+			</div>
+			<div class="box">
+				<h2>NOSOTROS</h2>
+				<p>Bodega Central: - <b>Av. Pedro aguirre Cerda 7786 Cerrillos</b></p>
+				<p>Sala de Venta: - <b>Camino a Talagante, Paine 1662, local 1 - Talagante</b></p>
+				<p>Horario Atención en Tienda: - <b>Lunes a Viernes: 9:00 a 18:00 hrs</b></p>
+				<p>Horario Atención en OnLine: - <b>Lunes a Viernes: 9:00 a 20:00 hrs</b></p>
+
+			</div>
+			<div class="box-2">
+				<h2>SIGUENOS</h2>
+				<div class="red-social">
+					<div class="row">
+						<a href="" class="fab fa-linkedin"style="font-size:28px;"></a>
+						<label><b>LinkedIn</b></label>
+					</div>
+					<div class="row">
+						<a href="" class="fab fa-instagram"style="font-size:28px;"></a>
+						<label><b>Instagram</b></label>
+					</div>
+					<div class="row">
+						<a href="" class="fab fa-twitter" style="font-size:28px;"></a>
+						<label><b>Twitter</b></label>
+					</div>
+					<div class="row">
+						<a href="" class="fab fa-youtube" style="font-size:28px;"></a>
+						<label><b>Youtube</b></label>
+					</div>
+					<div class="row">
+						<a href="" class="fab fa-facebook" style="font-size:28px;"></a>
+						<label><b>FaceBook</b></label>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="grupo-2">
+			<div class="box-3">
+				<div class="red-wa-mail">
+					<div class="row-1">
+						<!--<i class="fa-brands fa-amazon" style="font-size:100px;"></i>-->
+						<a href="" class="fa-brands fa-whatsapp" style="font-size:60px;"></a>  
+						<h5>+ 56 9 8920 2496</h5>
+					</div>
+					<div class="row-1">
+						<a href="" class="fa-regular fa-envelope" style="font-size:56px;"></a>  
+						<h5>Ventas@comercializadoraryp.cl</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="grupo-3">
+			<small>&copy; 2024 <b>Comercializadora R&P Ltda</b> - Todos los derechos reservados.</small>
+		</div>
+	</footer>
+</html>

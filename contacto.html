@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!--iconos de la web-->
+		
+		<!--sliders tipo fotos encasilladas (box) de la web debe ir por obligacion para ejecutar jquery-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  		<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+		
+		<!--awesome-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		
+		<!--boottrasp diseñps ya establecidos en este caso utilizo slider-->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+		
+		<!--Estilos ( hint )  Libreria externa-->
+		<link rel="stylesheet" href="../css/hint.css"/>
+		<!--style personales-->		
+		<link rel="stylesheet" href="style-menu-bar.css"/>
+		<link rel="stylesheet" href="style-footer.css"/>
+		<!--<link rel="stylesheet" href="style-icon-hover.css"/>-->
+		<link rel="stylesheet" href="style-contacto.css"/>
+
+		
+		<!--<script defer src="./eliminarEventos.js"></script>-->
+		<title>Comercializadora R&P</title>
+	</head>
+
+
+    <body>
+
+        <!--Header del menu
+		En esta seccion se da comienzo a la estructura de la pagina
+		empesamos definiendo una cabezera con  un menu de navegacion
+		que nos indica las opciones que tendra y su logo de empresa
+		 de forma ( RESPONCIVE )-->
+		<header>
+			<div class="content">
+				<!--Logo del menu de inicio de la Empresa-->
+				<div class="menu container">
+					
+					<!--Se incorpora el icono ( fa-solid fa-bars) para la barra reponsive-->
+ 					<a href ="index.html" class ="enlace"></a>
+
+					<!--imagen logo empresa-->
+					<img src ="../IMAGES PRUEBA/IMAGEN-PERFILRYP.png" class="menu-ppal" alt="">	
+
+					<h1></h1>		
+
+					<input type="checkbox" id="menu">
+					<label for="menu">
+						<!--Logo corporativo de Empresa para barra de menu-->		
+						<img src ="" class="menu-icono" alt="">	
+
+						<!--Icono de barra Responcive-->		
+						<i class="fa-solid fa-bars"></i>
+					</label>
+					<nav class="navbar"	>
+						<ul>
+							<!--Se indica una clase para dar con el boton remarcado al inicio-->
+							<li><a class="active" href="index.html">Inicio</a></li>
+							<!--<li><a href	="#">Rubros</a></li>
+							<li><a href	="#">Catalogos</a></li>
+							<li><a href	="contacto.html">Contacto</a></li>-->
+						</ul>
+					</nav>
+					<!--Agregamos un boton adicional al menu que indica ir a la seccion cotizar
+					<a href="#" class="boton_cotizar">Contacto</a>-->
+				</div>
+			</div>
+		</header>
+
+		<h1>Contactanos</h1>
+		<!--Definicion de pagina Contacto
+			Contenedor primario-->
+		<div class="contac-in">
+			<!--Primer contenedor Ubicacion 1-->
+			<div class="contac-map">
+				<!--Se obtiene la ubicacion en google maps-->
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3326.733557411335!2d-70.72009352471245!3d-33.50830864159718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662db57ccf9ac67%3A0xcd3d1268aa60f38f!2sAv.%20Pedro%20Aguirre%20Cerda%207786%2C%209200940%20Cerrillos%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1717716914748!5m2!1ses!2scl"
+				 width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+			
+			<!--Definicion Formulario Contacto-->
+			<div class="contac-form">
+				<h1>Envianos un mensaje</h1>
+				<form action="https://formsubmit.co/bypizarro.mpl@gmail.com" method="POST" class="form" id="user-form">
+						
+					<!-- Grupo Nombre-->
+					<div class="form-box form-error" id="grupo-nombre">
+						<label for="nickName" class ="ocultar-label">Name</label>
+						<div class="toolstips-1 activo" data-tooltips="Ingrese un Nombre valido (Sin Numeros)">
+							<input type="Text" name="nickName" id="nickName" class="contac-form-txt" placeholder="Nombre" onclick="" ><span class="barra"></span>
+						</div>
+						<i class="form-ico fas fa-times-circle"></i>
+						<p class="error-text">el nombre no puede contener numeros</p>
+					</div>	
+
+					<!-- Grupo Email-->
+					<div class="form-box" id="grupo-correo">
+						<label for="email" class ="ocultar-label">Email</label>	
+						<div class="toolstips-1" data-tooltips="Ingrese un Correo electronico valido">
+							<input type="email" class="contac-form-txt" name="email" id="email" placeholder="Email" />
+						</div>
+						<i class="formulario-validacion-estado fas fa-times-circle"></i>		
+						<p class="error-text">debe ingresar un correo valido</p>
+					</div>
+					
+					<!-- Grupo Mensaje-->
+					<div class="form-box" id="grupo-mensaje">
+						<label for="mensaje" class ="ocultar-label">Mensaje</label>
+						<div class="toolstips-1" data-tooltips="ingrese un mensaje valido">
+							<textarea placeholder="Mensaje" class="contac-form-textarea" name="mensaje" id="mensaje"></textarea>	
+						</div>
+						<i class="formulario-validacion-estado fas fa-times-circle"></i>
+						<p class="formulario-input-error">el mensaje no puede ser en blanco</p>
+						
+						
+						<div class="formulario--mensaje" id="formulario--mensaje">
+							<p><i class="fas fa-exclamation-triangle"></i><b>Error:</b>Favor rellenar el mensaje</p>
+						</div>
+
+						<!-- Boton enviar-->
+						<div class="formulario--grupo formulario--grupo-btn-enviar">
+							<button type="submit" id="submit-btn" class="contac-form-btn" disabled>Enviar</button>
+							<p class="formulario--mensaje-exito" id="formulario--mensaje-exito">Formulario enviado correctamente</p>
+						</div>						
+					</form>
+			</div>
+		</div>
+
+
+		<script src="../JS/valida-form-contacto.js"></script>	
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    </body>
+
+	<!--Ejecucion de slider en movimiento-->
+	<script src="js/jQuery.js"></script>
+	<script>
+		jQuery(document).ready(function($){
+			$('.toolstips-1').on('click',function(){
+			$('.toolstips-1').removeClass('active');
+			$(this).addClass('active')
+			})
+		})
+	</script>
+
+
+	<!--Creacion del footer ( Pie de pagina ) de la empresa-->
+	<footer class="pie-pagina">
+		<div class="grupo-1">
+			<div class="box">
+				<figure>
+					<a href="#">
+						<img src="../IMAGES PRUEBA/IMAGEN-PERFILRYP.png" alt="Logo Empresa">
+					</a>
+				</figure>
+			</div>
+			<div class="box">
+				<h2>NOSOTROS</h2>
+				<p>Bodega Central: - <b>Av. Pedro aguirre Cerda 7786 Cerrillos</b></p>
+				<p>Sala de Venta: - <b>Camino a Talagante, Paine 1662, local 1 - Talagante</b></p>
+				<p>Horario Atención en Tienda: - <b>Lunes a Viernes: 9:00 a 18:00 hrs</b></p>
+				<p>Horario Atención en OnLine: - <b>Lunes a Viernes: 9:00 a 20:00 hrs</b></p>
+			</div>
+			<div class="box-2">
+				<h2>SIGUENOS</h2>
+				<div class="red-social">
+					<div class="row">
+						<a href="" class="fab fa-linkedin"style="font-size:28px;"></a>
+						<label><b>LinkedIn</b></label>
+					</div>
+					<div class="row">
+						<a href="" class="fab fa-instagram"style="font-size:28px;"></a>
+						<label><b>Instagram</b></label>
+					</div>
+					<div class="row">
+						<a href="" class="fab fa-twitter" style="font-size:28px;"></a>
+						<label><b>Twitter</b></label>
+					</div>
+					<div class="row">
+						<a href="" class="fab fa-youtube" style="font-size:28px;"></a>
+						<label><b>Youtube</b></label>
+					</div>
+					<div class="row">
+						<a href="" class="fab fa-facebook" style="font-size:28px;"></a>
+						<label><b>FaceBook</b></label>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="grupo-2">
+			<div class="box-3">
+				<div class="red-wa-mail">
+					<div class="row-1">
+						<!--<i class="fa-brands fa-amazon" style="font-size:80px;"></i>-->
+						<a href="" class="fa-brands fa-whatsapp" style="font-size:60px;"></a>  
+						<h5>+ 56 9 8920 2496</h5>
+					</div>
+					<div class="row-1">
+						<a href="" class="fa-regular fa-envelope" style="font-size:56px;"></a>  
+						<h5>ventas@comercializadoraryp.cl</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="grupo-3">
+			<small>&copy; 2024 <b>Comercializadora R&P Ltda</b> - Todos los derechos reservados.</small>
+		</div>
+	</footer>
+
+
+</html>
