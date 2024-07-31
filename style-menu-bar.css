@@ -17,10 +17,7 @@
 /*Se define un background del Box con su respectivo (alto o height)*/
 .content {
     min-height: 80px;
-    background: linear-gradient(
-		90deg, rgb(172, 128, 155)0%,
-        rgb(196, 247, 57)70%    
-    );
+    background: rgb(237, 218, 12);
 }
 
 /*Se centra y justica la posicion del las opciones del barnav* (RESPONCIVE)*/
