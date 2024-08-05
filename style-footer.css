@@ -1,28 +1,32 @@
-/* Reset and global styles */
+/* Reseteo de estilos básicos */
 * {
     margin: 0;
     padding: 0;
+    overflow-x: hidden; /* Evita el desplazamiento horizontal */
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
 
+/* Estilos generales para el pie de página */
 .pie-pagina {
-    background-color: #000000;
-    padding: 20px 20px;
-    color: #ffffff;
+    background-color: #f2e265; /* Fondo amarillo */
+    padding: 20px;
+    color: #000000; /* Texto negro */
     text-align: center;
     position: relative;
 }
 
+/* Estilos para los enlaces en el pie de página */
 .pie-pagina a {
     text-decoration: none;
-    color: #8b949e;
+    color: #000000; /* Enlaces negros */
 }
 
 .pie-pagina a:hover {
-    color: #ffffff;
+    color: #ffffff; /* Enlaces blancos al pasar el ratón */
 }
 
+/* Contenedor principal del pie de página */
 .grupo-1 {
     display: flex;
     justify-content: space-between; 
@@ -31,56 +35,87 @@
     gap: 20px; 
 }
 
+/* Estilos para las cajas dentro del pie de página */
 .box, .box-2, .box-3 {
     flex: 1; 
     min-width: 300px;
     margin-bottom: 10px;
 }
 
+/* Estilos para los títulos dentro de las cajas */
 .box h2, .box-2 h2, .box-3 h2 {
     font-size: 16px;
     margin-bottom: 10px;
-    color: #ffffff;
+    color: #000000; /* Títulos negros */
 }
 
+/* Estilos para los párrafos dentro de las cajas */
 .box p, .box h5, .box-3 h5 {
     margin-bottom: 10px;
-    color: #8b949e;
+    color: #000000; /* Párrafos negros */
 }
 
-.red-social .row, .red-wa-mail .row {
+/* Estilos para las filas de redes sociales y WhatsApp */
+.red-social .row, .red-wa-mail .row-1 {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 10px;
 }
 
-.red-social .row a, .red-wa-mail .row a {
+/* Estilos para los enlaces dentro de las filas de redes sociales y WhatsApp */
+.red-social .row a, .red-wa-mail .row-1 a {
     margin-right: 5px;
+    color: #000000; /* Iconos negros */
 }
 
+.red-social .row a:hover, .red-wa-mail .row-1 a:hover {
+    color: #ffffff; /* Iconos blancos al pasar el ratón */
+}
+
+/* Estilos específicos para los iconos de redes sociales */
+.red-social .row a.fab.fa-twitter,
+.red-social .row a.fab.fa-instagram,
+.red-social .row a.fab.fa-linkedin {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px; /* Ajustar el tamaño del icono interno */
+}
+
+.red-social .row a.fab.fa-twitter::before,
+.red-social .row a.fab.fa-instagram::before,
+.red-social .row a.fab.fa-linkedin::before {
+    font-size: 30px; /* Tamaño del icono interno */
+}
+
+/* Estilos para el contenedor de WhatsApp y correo */
+.red-wa-mail {
+    font-size: 30px;
+    display: flex;
+    flex-direction: column; 
+}
+
+/* Contenedor secundario del pie de página */
 .grupo-2 {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 40px;
     margin-top: 20px;
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    flex-wrap: wrap; /* Permite el ajuste en pantallas más pequeñas */
 }
 
+/* Estilos para la información de contacto */
 .grupo-2 .contact-info {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.red-wa-mail {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
-}
-
+/* Contenedor terciario del pie de página */
 .grupo-3 {
     text-align: center;
     padding-top: 10px;
@@ -88,15 +123,18 @@
     margin-top: 10px;
 }
 
+/* Estilos para el texto pequeño en el pie de página */
 .grupo-3 small {
-    color: #8b949e;
+    color: #000000; /* Texto pequeño negro */
 }
 
+/* Estilos para las imágenes */
 figure img {
     width: 300px;
     margin-bottom: 10px;
 }
 
+/* Media query para pantallas con un ancho máximo de 768px */
 @media (max-width: 768px) {
     .pie-pagina {
         padding: 10px;
@@ -107,17 +145,39 @@ figure img {
         margin-bottom: 20px;
     }
 
-    
-
     .box, .box-2, .box-3 {
         min-width: 100%;
     }
 
-    .red-social .row, .red-wa-mail .row {
-        justify-content: flex-start;
+    .red-social {
+        display: flex;
+        flex-direction: column; /* Cambia a columna para dispositivos más pequeños */
+        justify-content: center;
+        align-items: center;
+    }
+
+    .red-social .row, .red-wa-mail .row-1 {
+        justify-content: center; /* Centra los elementos */
+        align-items: center; /* Alinea los elementos verticalmente */
+        margin-bottom: 10px; /* Añade un margen inferior para separar los elementos */
+    }
+
+    .red-social .row a, .red-wa-mail .row-1 a {
+        font-size: 24px; /* Ajusta el tamaño de los iconos */
+        margin-right: 5px; /* Ajusta el margen derecho */
+    }
+
+    .red-social .row label, .red-wa-mail .row-1 label {
+        font-size: 16px; /* Ajusta el tamaño del texto */
+    }
+
+    figure img {
+        width: 40%;
+        margin-top: 10px;
     }
 }
 
+/* Media query para pantallas con un ancho máximo de 480px */
 @media (max-width: 480px) {
     .pie-pagina {
         padding: 5px;
@@ -132,11 +192,19 @@ figure img {
         font-size: 14px;
     }
 
-    .red-social .row a, .red-wa-mail .row a {
+    .red-social .row a, .red-wa-mail .row-1 a {
         margin-right: 3px;
     }
 
+    .red-social {
+        display: flex;
+        flex-direction: column; /* Cambia a columna para dispositivos más pequeños */
+        justify-content: center;
+        align-items: center;
+    }
+
     figure img {
-        width: 100%;
+        width: 50%;
+        margin-top: 10px;
     }
 }
