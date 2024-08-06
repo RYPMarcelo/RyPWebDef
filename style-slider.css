@@ -1,22 +1,20 @@
 /* diseño de estilo Slider en 3D*/
-
+@import url('https://fonts.googleapis.com/css2?family=jost:wght@400,700&displayaswp');
 *{
     margin: 0;
 	padding: 0;
 	box-sizing:border-box;
 	text-decoration: none;
-	font-family: "Jost", sans-serif;
+	font-family:"Jost", sans-serif;
 }
 
 .slider-container{
-    padding-top: 100px;
-	max-width: 1200px;
-
+    padding-top: 30px;	
 	margin: auto;
 	text-align: center;
     width: 100%;
     height: 100%;
-    background-image: url("../IMAGES PRUEBA/Agroindustria.png");
+    /*background-image: url("../IMAGES PRUEBA/Agroindustria.png");*/
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -26,7 +24,7 @@
 
     background: rgb(196, 194, 194);
     background: linear-gradient(to right, #b3e76e,#515d83);
-    padding-bottom: auto;
+   /* padding-bottom: auto;*/
 }
 
 .slider-text{
@@ -36,6 +34,7 @@
 .slider-text p{
     letter-spacing: 4px;
 }
+
 .slider-text h1{
     align-items: center;
     display: center;    
@@ -43,125 +42,103 @@
 
 .slider-images{
     /* definicion de separacion entre imagenes y centraddo de imagen*/
-    padding: 60px; /* Realiza una separacion entre objetos */
+    padding: 40px;
     display: flex; /* valores del despligue de la imagen Flex=Horizontal(with) Center=Vertical(heigh)*/
     align-items: center;
-    gap: 5px;
+    gap: 10px;
 }
 
 .slider-images img{
     /*definicion del tamaño de la imagen*/
     width: 90%;
     height: 90%;
-    object-fit: center;
-    border-radius: 5px;
+    object-fit: cover;
+    border-radius: 6px;
 }
 
 .slider-img {
-    width: 50px; /*Define el tamoño de la imagen en reposo*/
-    border-radius: 5px; /* valor del marco de la imagen en este valor se puede llegar hasta una circunferencia*/
+    width: 100px; /*Define el tamoño de la imagen en reposo*/
+    border-radius: 6px; /* valor del marco de la imagen en este valor se puede llegar hasta una circunferencia*/
     cursor: pointer; /*Define un cursor especifico al pasar sobre la imagen*/
     position: relative;
     transition: 0.7s ease;
 }
-
-
 /* el paramtro child se ejecuta situando la posicion de in elemento dentro de una clase y se relaciona con el valor (alt)
     ejemplo:
         <img src="../IMAGES PRUEBA/Quimicas.png" alt="9">
         first:indica primera posicion, last:indica ultima posicion 
         parametro:asignacion este caso es la posicion(height) que nos indica donde se ubicara dentro del formulario,
         con su respectivo tamaño*/
+
     
 .slider-images .slider-img:first-child, .slider-images .slider-img:last-child{
-    height: 150px;
+    height: 480px;
 }
-
-.slider-images .slider-img:nth-child(2), .slider-images .slider-img:nth-child(8){
-    height: 200px;
+        /*.slider-images .slider-img:nth-child(5), .slider-images .slider-img:nth-child(8){*/
+.slider-images .slider-img:nth-child(3){
+    height: 665px;
 }
-
-.slider-images .slider-img:nth-child(3), .slider-images .slider-img:nth-child(7){
-    height: 250px;
+        
+.slider-images .slider-img:nth-child(2), .slider-images .slider-img:nth-child(4){
+    height: 580px;
 }
-
-.slider-images .slider-img:nth-child(4), .slider-images .slider-img:nth-child(5), .slider-images .slider-img:nth-child(6){
-    height: 300px;
-}
-
+        
 .slider-img h1{
-    /*Se define el tipo de letra,tamaño,color,posicion*/
-    font-family: "Jost", sans-serif;
-    font-size: 25px ;
-    font-weight: 400;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 26px;
+    font-weight: 500;
     text-align: left;
     text-transform: uppercase;
     color: #fff;
     position: absolute;
-    top: 35%;
-    left: 70%;
-    bottom: 5%;
+    top: 40%;
+    left: -10%;
     transform: rotate(270deg);
-    transition: 0,7seg;
+    transition: 0.7s ease;
 }
 
 .details{
     position: absolute;
-    bottom: 33px;
-    left: 33px;
+    bottom: 60px;
+    left: 50px;
 }
 
 .details h2{
-    /*Se define el tipo de letra,tamaño,color,posicion*/
-    font-family: "Jost", sans-serif;
-    font-size:30px ;
-    font-weight: 600;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 26px;
+    font-weight: 700;
     text-align: left;
-    line-height: 6px;
-    text-align:left;
-    color: #f8f2f2;
+    line-height: 5px;
+    text-align: left;
+    color: #fff;
     text-transform: uppercase;
-    transition: 0.7 ease;
+    transition: 0.7seg;
     display: none;
-    text-shadow: black;
 }
 
 .details p{
-    /*Se define el tipo de letra,tamaño,color,posicion*/
-    font-family: "Jost", sans-serif;
-    font-size:15px ;
-    font-weight: 600;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
     text-align: left;
-    line-height: 40px;
-    text-align:left;
+    line-height: 33px;
+    text-align: left;
     color: #fff;
     text-transform: uppercase;
-    transition: 0.7 ease;
+    transition: 0.7seg;
     display: none;
+
 }
 
-.slider-img .active{
-    width: 500px !important;
-    height: 450px !important;
+.slider-img.active{
+    width: 620px !important;
+    height: 570px !important;
 }
 
-.slider-img .active h1{
-    /*activa o desactiva una clase en este caso se llama active
-    y se relaciona con:
-
-    <script src="js/jQuery,js"></script>
-	<script>
-		jQuery(document).ready(function($){
-			$('.slider-img').on('click',function(){
-				$('.slider-img').removeClass('active');
-				$(this).addClass('active')
-			})
-		})
-	</script> En el archivo principal este caso se llama (index)*/
-    display: none;
+.slider-img.active h1{
+    display:none;
 }
 
 .slider-img.active .details p, .slider-img.active .details h2{
     display: block;
 }
-
