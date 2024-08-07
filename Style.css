@@ -159,10 +159,13 @@ body {
 }
 
 .card-primary{
-	max-width: 1200px;
+	width: 100%;
 	margin: auto;
 	text-align: center;
 	padding: 0px 25px;
+	background: linear-gradient( /* se define el color de fondo del tooltips ( degradado en gris*/
+	90deg, #859398 20%,
+	rgb(240, 245, 245)40%);
 }
 
 .text-card-primary{
@@ -174,9 +177,9 @@ body {
 .text-card-primary p{
 	color: var(--color-text-primary);
 	letter-spacing: 4px;
-	font-size: 16px ;
+	font-size: 18px ;
 	font-weight: 500;
-	padding: 10px;
+	padding: 30px;
 }
 
 .text-card-primary h1{
@@ -186,7 +189,7 @@ body {
 }
 
 .container-box-cardPrimary{
-	display: flex;
+	box-sizing: border-box;
 	flex-wrap: wrap;
 	justify-content: center;
 	margin-top: 40px;
@@ -194,23 +197,27 @@ body {
 
 .box-card-primary{
 	/* Creacion del block ancho y alto*/
-	max-width: 500px; /*tamaño del box*/
+	display: block;
+	max-width: 1000px; /*tamaño del box*/
 	padding: 40px 30px; /*ancho y alto de posicion de imagen*/
 	border: 1px solid rgb(12, 12, 12); 
 	border-radius: 20px;
 	margin: 18px;
 	transition: all 300ms;
+	position: relative;
 }
 
 .box-card-primary img{
 	/* centra una imagen dentro del block 
 	ademas le damos el tamaño que deseas NO se nesecita el padding
 	el tamaño del block es el que manda*/
-	display: block;
-	width: 430px;
-	margin: 0px;
-	height: 350px;
+	
+	width: 300px;	
+	height: 200px;
+	margin-right: 15px;
 	border-radius: 20px;
+	border: 3px solid white;
+	float:left
 }
 
 .box-card-primary:hover{
@@ -219,15 +226,21 @@ body {
 	cursor: pointer;
 }
 
-.box-card-primary h2{
-	font-size: var(--text-title-card);
+.box-card-primary h2{	
+	font-size: 35p;
 	margin-top: 30px;
 	font-weight: 500;
+	position: absolute;
+	top: 10px;
+	left: 350px;
+	color:black
 }
 
 .box-card-primary p{
-	margin-top: 40px;
-	text-align: justify; 
+	/*margin-top: 40px;*/
+	text-align: center;
+	top: 500px;
+	left: 300px
 }
 
 
