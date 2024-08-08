@@ -22,12 +22,20 @@
 
 .logos {
     overflow: hidden;
-    padding: 50px 0;
+    padding: 20px 0;
     background:white; /* se define el color de fondo del Box*/
     white-space: nowrap;
     position: relative;
 }
 
+.logos h1{
+color:black;
+text-align: center;
+font-size:20px ;
+font-weight: bold;
+height: 30px;
+
+}
 
 /*define el antes y despues de una entrada y saliada
  de un box con esquinas degradadas en colores*/
@@ -35,7 +43,7 @@
 .logos:after {
     position: absolute;
     top: 0;   
-    width: 250px;
+    width: 150px;
     height: 100%;
     content: "";
     z-index: 2;
@@ -65,6 +73,6 @@
 
 /* se define tamaño de imagen y margenes */
 .logos-slide img {
-    height: 80px;
+    height: 60px;
     margin: 0 20px;
 }

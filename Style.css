@@ -7,6 +7,7 @@
 	box-sizing:border-box;
 	text-decoration: none;
 	font-family: "Poppins", sans-serif;
+	
 }
 /* Se establece la imagen de fondo corpoativa*/
 body {
@@ -15,6 +16,7 @@ body {
 	/*background: url("../img/fondo-06.jpg");*    coloca una imagen a todo lo que esta en el body 
 	background-size: cover;
 	background-position: center;*/
+	
 }
 
 /* Creacion de Variables*/
@@ -26,7 +28,7 @@ body {
 	--main-color-secundario: #F4D4FB;
 	--fondo-color: #FAFBFC;
 	--lowtext-font-size: 16px;
-	--text-size-title:30px;
+	--text-size-title:35px;
 	--text-title-card: 20px;
 	--text-title-cardv2:20px;
 	--text-paragrah: 20px;
@@ -90,6 +92,7 @@ body {
 
 .text-cover h1{	
 	/*background-color:rgba(8, 8, 5, 0.3);*/
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	color:rgba(165, 217, 241, 0.945);	
 	text-shadow: 0 0 8px rgba(87, 87, 85, 0.8);
 	font-weight: bold;
@@ -97,7 +100,7 @@ body {
 	
 }
 .text-cover p{	
-	font-family: 'Franklin Gothic Medium';
+	
 	font-size: 20px;
 	margin-top: 20px;	
 	color:rgba(235, 238, 240, 0.945);
@@ -140,13 +143,12 @@ body {
 	color: var(--color-text-primario);
 }
 
-
 /* Estilos Geenrales  segunda parte */
 /*formato de ancho de pagina con su respectivo color o imagen de fondo*/
 .container-trust {
 	max-width: 1200px;
 	margin: auto;
-	background-color: #98e6ec;
+	/*background-color: #98e6ec;
 	background: linear-gradient(
 		90deg, #859398 30%,
         rgb(240, 245, 245)50%);
@@ -161,63 +163,81 @@ body {
 .card-primary{
 	width: 100%;
 	margin: auto;
-	text-align: center;
+	background: linear-gradient(to bottom ,rgb(0 0 0/.5),rgb(0 0 0 / .5)), url("../IMAGES PRUEBA/images-fondo-07.jpg"); 
+	background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: 100% 100%;
+		color:#ffffff;		
+
 	padding: 0px 25px;
-	background: linear-gradient( /* se define el color de fondo del tooltips ( degradado en gris*/
+	/*background: linear-gradient( /* se define el color de fondo del tooltips ( degradado en gris
 	90deg, #859398 20%,
-	rgb(240, 245, 245)40%);
+	rgb(240, 245, 245)40%);*/
 }
 
 .text-card-primary{
-	/*max-width: 1200px;*/
+	/*max-width: 1200px;*/	
 	margin: auto;
 }
 
 /*Configuracion de Titulos*/
 .text-card-primary p{
-	color: var(--color-text-primary);
-	letter-spacing: 4px;
-	font-size: 18px ;
-	font-weight: 500;
-	padding: 30px;
+	
+	text-align: center;
+    letter-spacing: 4px;
+    font-size: 18px;
+	font-weight: 100;
+	padding: 20px;
+	
 }
 
 .text-card-primary h1{
-	font-size: var(--text-size-title);
-	font-weight: 600;
-	color: var(--color-text-segundario);
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	text-align: center;
+	font-size: 30px;
+	font-weight: 100px;
+	color:rgba(252, 204, 47, 0.945);	
+	text-shadow: 0 0 8px rgba(8, 8, 8, 0.8);
+	
+	/*color: var(--color-text-segundario);*/
 }
 
 .container-box-cardPrimary{
+
+	display:flex;
+	justify-content:center;
+	align-items: center;
+	min-height: 100vh;
 	box-sizing: border-box;
-	flex-wrap: wrap;
-	justify-content: center;
+	flex-wrap: wrap;	
 	margin-top: 40px;
 }
 
 .box-card-primary{
 	/* Creacion del block ancho y alto*/
-	display: block;
-	max-width: 1000px; /*tamaño del box*/
+	/*display: block;*/
+	max-width: auto; /*tamaño del box*/
 	padding: 40px 30px; /*ancho y alto de posicion de imagen*/
-	border: 1px solid rgb(12, 12, 12); 
+	border: 2px solid rgb(105, 103, 103); 
 	border-radius: 20px;
-	margin: 18px;
+	margin: 20px auto;
+	width: 100%;
 	transition: all 300ms;
-	position: relative;
+	
 }
 
 .box-card-primary img{
 	/* centra una imagen dentro del block 
 	ademas le damos el tamaño que deseas NO se nesecita el padding
 	el tamaño del block es el que manda*/
-	
-	width: 300px;	
-	height: 200px;
+	max-width: 400px;
+	width: 400px;		
+	height: 250px;
 	margin-right: 15px;
 	border-radius: 20px;
 	border: 3px solid white;
-	float:left
+	float:left;
+	margin-right: 15px;
 }
 
 .box-card-primary:hover{
@@ -226,21 +246,25 @@ body {
 	cursor: pointer;
 }
 
-.box-card-primary h2{	
+.box-card-primary h2{
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	font-size: 35p;
-	margin-top: 30px;
-	font-weight: 500;
-	position: absolute;
-	top: 10px;
-	left: 350px;
-	color:black
+	/*margin-top: 30px;*/
+	font-weight: 100px;	
+	/*top: 10px;
+	left: 350px;*/
+	color:rgba(69, 247, 193, 0.945);	
+	text-shadow: 0 0 8px rgba(8, 8, 8, 0.8);
+	
 }
 
 .box-card-primary p{
-	/*margin-top: 40px;*/
-	text-align: center;
+	/*margin-top: 40px;
+	text-align: left;
 	top: 500px;
-	left: 300px
+	left: 300px*/
+	
+	color:white
 }
 
 

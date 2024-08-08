@@ -104,7 +104,6 @@
 		width: 100%;
 	}
 	
-
 	#menu:checked ~ .navbar {
 		display: initial;
 	}

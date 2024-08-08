@@ -30,15 +30,12 @@ body h1 {
 .form-box .ocultar-label {
     visibility: hidden;
 }
-.form-box i {
+.form-box i{
     display: none;
 }
-.form-box p {
+.form-box p{
     display: none;
 }
-
-
-
 
 
 /*Diseño Anterior actual by pizarro*/

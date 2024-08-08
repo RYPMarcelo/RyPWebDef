@@ -23,15 +23,14 @@
 		<link rel="stylesheet" href="style-footer.css"/>
 		<!--<link rel="stylesheet" href="style-icon-hover.css"/>-->
 		<link rel="stylesheet" href="style-contacto.css"/>
+		<link rel="stylesheet" href="style-slider.css"/>
 
 		
 		<!--<script defer src="./eliminarEventos.js"></script>-->
 		<title>Comercializadora R&P</title>
 	</head>
 
-
     <body>
-
         <!--Header del menu
 		En esta seccion se da comienzo a la estructura de la pagina
 		empesamos definiendo una cabezera con  un menu de navegacion
@@ -40,15 +39,12 @@
 		<header>
 			<div class="content">
 				<!--Logo del menu de inicio de la Empresa-->
-				<div class="menu container">
-					
+				<div class="menu container">					
 					<!--Se incorpora el icono ( fa-solid fa-bars) para la barra reponsive-->
  					<a href ="index.html" class ="enlace"></a>
 
 					<!--imagen logo empresa-->
 					<img src ="../IMAGES PRUEBA/IMAGEN-PERFILRYP.png" class="menu-ppal" alt="">	
-
-					<h1></h1>		
 
 					<input type="checkbox" id="menu">
 					<label for="menu">
@@ -71,12 +67,73 @@
 					<a href="#" class="boton_cotizar">Contacto</a>-->
 				</div>
 			</div>
-		</header>
-
-		<h1>Contactanos</h1>
+		</header>			
+		<!--Creacion del slider de rubros a cuales trabajamos
+			Este se puede utilizar con distintos tipos de imagenes a representar tipo (BOX)
+		<main>
+			<div class="slider-container">
+				<div class="slider">
+					<div class="slider-text">
+						<p>Nuestros Vendedores ?</p>
+						<h1>Equipo dedicado a tus necesidades</h1>
+					</div>
+					<div class="slider-images">
+						<div class="slider-img">
+							<img src="../img-personas/persona-1.jfif" alt="1">
+							<h1>Juanjo</h1>
+							<div class="details">
+								<h2>Juan Jose</h2>
+								<p>mail: ventas@comercializadoraryp.cl</p>
+								<h3>wsp : +56 9 5626 2360</h3>								
+							</div>	
+						</div>	
+						<div class="slider-img">
+							<img src="../img-personas/persona-2.jfif" alt="2">
+							<h1>Mariela</h1>	
+							<div class="details">
+								<h2>Mariela Catrileo</h2>
+								<p>mail : mariela@comercializadoraryp.cl</p>
+								<h3>wsp : +56 9 5626 2360</h3>								
+							</div>
+						</div>
+						<div class="slider-img active">
+							<img src="../img-personas/persona-3.jfif" alt="3">
+							<h1>Emilio</h1>	
+							<div class="details">
+								<h2>Emilio Rabanales</h2>
+								<p>mail : emilio@comercializadoraryp.cl</p>
+								<h3>wsp : +56 9 5626 2360</h3>								
+							</div>
+						</div>
+						<div class="slider-img">
+							<img src="../img-personas/persona-4.jfif" alt="4">
+							<h1>Alejandra</h1>
+							<div class="details">
+								<h2>Alejandra Ortega</h2>
+								<p>mail : alejandra@comercializadora.cl</p>
+								<h3>wsp : +56 9 5626 2360</h3>								
+							</div>	
+						</div>
+						<div class="slider-img">
+							<img src="../img-personas/persona-5.jfif" alt="5">
+							<h1>Marcelo</h1>	
+							<div class="details">
+								<h2>Marcelo Pizarro</h2>
+								<p>mail : bypizarro.mpl@comercializadoraryp.cl web3 developer</p>
+								<h3>wsp : +56 9 5626 2360</h3>								
+							</div>
+						</div>																					
+					</div>
+				</div>
+			</div>
+		</main>-->
+		
+		<!--<h1>Contactanos</h1>-->
 		<!--Definicion de pagina Contacto
 			Contenedor primario-->
+		<h1>Contactanos</h1>
 		<div class="contac-in">
+			
 			<!--Primer contenedor Ubicacion 1-->
 			<div class="contac-map">
 				<!--Se obtiene la ubicacion en google maps-->
@@ -128,17 +185,26 @@
 							<button type="submit" id="submit-btn" class="contac-form-btn" disabled>Enviar</button>
 							<p class="formulario--mensaje-exito" id="formulario--mensaje-exito">Formulario enviado correctamente</p>
 						</div>						
-					</form>
+					</div>
+				</form>
 			</div>
 		</div>
-
-
+		
 		<script src="../JS/valida-form-contacto.js"></script>	
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+	
     </body>
-
+	<script src="js/jQuery.js"></script>	
+	<script>
+		jQuery(document).ready(function($){
+			$('.slider-img').on('click',function(){
+			$('.slider-img').removeClass('active');
+			$(this).addClass('active')
+			})
+		})
+	</script>
 	<!--Ejecucion de slider en movimiento-->
 	<script src="js/jQuery.js"></script>
 	<script>
@@ -198,7 +264,7 @@
 			<div class="box-3">
 				<div class="red-wa-mail">
 					<div class="row-1">
-						<!--<i class="fa-brands fa-amazon" style="font-size:80px;"></i>-->
+						
 						<a href="" class="fa-brands fa-whatsapp" style="font-size:60px;"></a>  
 						<h5>+ 56 9 8920 2496</h5>
 					</div>
