@@ -38,12 +38,14 @@
 
 /* Se define el tipo o familia de letras, el tamaño, y centrado de esta, color y sin subrayado*/
 .menu .navbar ul li a {
+	margin-top: 20px;
 	font-family: 'Gill Sans', sans-serif;
-	font-size: 25px;
+	font-size: 18px;
 	padding: 0 20px;
 	color: rgb(33, 36, 41);
 	display: block;
 	text-decoration: none;
+	
 	/*font-weight: bold;*/
 }
 
@@ -60,11 +62,12 @@
 	width: 25px;
 }
 
-/* tamaño de logo en menuvar*/
+/* tamaño de logo en menuvar */
 .menu-ppal {
-	width: 210px;
-	height: 75px;
-	padding: 0 5px;
+
+    width: 210px;
+    height: 75px;
+    
 }
 
 .menu label {
@@ -79,7 +82,25 @@
 	padding: 0;
 	color:rgb(15, 2, 2)
 }
-@media( max-width:650px ){
+
+/* Media query para pantallas con un ancho máximo de 800px */
+@media (max-width: 1000px) {
+    .content {
+        min-height: 100px;
+    }
+    .menu {
+        top: 0;
+        padding: 15px;
+    }
+    .menu .navbar ul li a {
+        font-size: 16px; /* Reduce el tamaño de la fuente */
+        padding: 0 10px; /* Reduce el padding */
+		font-weight: bold;
+    }
+    
+}
+
+@media( max-width:700px ){
 	.content{
 		min-height: 100px;
 	}
