@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="styles');
 
 *{
@@ -9,20 +8,20 @@
 	font-family: "Poppins", sans-serif;
 	
 }
-/* Se establece la imagen de fondo corpoativa*/
+
+/* Se establece la imagen de fondo corpoativa */
 body {
 	margin: auto;
 	padding: auto;
-	/*background: url("../img/fondo-06.jpg");*    coloca una imagen a todo lo que esta en el body 
+	/* background: url("../img/fondo-06.jpg"); coloca una imagen a todo lo que esta en el body 
 	background-size: cover;
-	background-position: center;*/
-	
+	background-position: center; */
 }
 
-/* Creacion de Variables*/
+/* Creacion de Variables */
 :root {
 	--color-text-primario: #0d1A94;
-	--color-text-segundario:black;
+	--color-text-segundario: black;
 	--color-text-tercero: #74b4f0;
 	--main-color-primario: #9A00BF;
 	--main-color-secundario: #F4D4FB;
@@ -35,16 +34,7 @@ body {
 	--box-shadow-primary: 0px 6px 50px -20px rgba(8, 8, 5, 0.2);
 }
 
-
-/* ver bien como actua esta opcion
-.header{
-	width: 100%;
-	height: 100px;
-	position: fixed;
-	z-index: 100;
-}*/
-
-
+/* Botón Cotizar */
 .boton_cotizar{
 	display: block;
 	padding: 8px 30px;
@@ -61,19 +51,14 @@ body {
 	background: rgb(109, 71, 214);
 }  
 
-/*definicion de portada de inicio*/
+/* Definicion de portada de inicio */
 .container-cover{
 	padding-top: 10px;
-	/*padding-bottom: 100px;*/
 	background: linear-gradient(to bottom ,rgb(0 0 0/.5),rgb(0 0 0 / .5)), url("../img/fondo-bodeg-01.png"); 
-	/* 	coloca una imagen solo en una parte del formulario
-		en este caso en la pantalla principal del (<main>)
-		background: var(--main-color-secundario);  */
-
-		background-repeat: no-repeat;
-		background-attachment: fixed;
-		background-size: 100% 100%;
-		color:#ffffff		
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+	color: #ffffff;
 }
 
 .cover{
@@ -90,39 +75,36 @@ body {
 	padding-right: 120px;
 }
 
-.text-cover h1{	
-	/*background-color:rgba(8, 8, 5, 0.3);*/
+.text-cover h1 {	
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-	color:rgba(165, 217, 241, 0.945);	
-	text-shadow: 0 0 8px rgba(87, 87, 85, 0.8);
+	color: rgba(165, 217, 241, 0.945);	
+	text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
 	font-weight: bold;
-	font-size: 70px;
-	
+	font-size: 60px;
 }
-.text-cover p{	
-	
+
+.text-cover p {	
 	font-size: 20px;
 	margin-top: 20px;	
-	color:rgba(235, 238, 240, 0.945);
+	color: rgba(235, 238, 240, 0.945);
 	text-shadow: 0 0 8px rgba(10, 10, 10, 0.8);
 	text-align: left;
 	position: 100px;		
 }
 
-.image-cover-fondo-linea{
-	/*coloca las imagenes en forma RESPONSIVE*/
+.image-cover-fondo-linea {
 	width: 100%;
 } 
 
-.image-cover-fondo-linea img{
+.image-cover-fondo-linea img {
 	padding: 0px;
 	position: 20px;
 	width: 340px;
 	height: 500px;
 }
 
-/* linea e ryp*/
-.boton-text{
+/* Botón de Texto */
+.boton-text {
 	display: block;
 	width: 150px;
 	margin-top: 40px;
@@ -137,75 +119,64 @@ body {
 	transition: all 300ms;
 }
 
-.boton-text:hover{
+.boton-text:hover {
 	background: transparent;
 	border: 2px solid black;
 	color: var(--color-text-primario);
 }
 
-/* Estilos Geenrales  segunda parte */
-/*formato de ancho de pagina con su respectivo color o imagen de fondo*/
+/* Estilos Generales Segunda Parte */
 .container-trust {
 	max-width: 1200px;
 	margin: auto;
 	/*background-color: #98e6ec;
 	background: linear-gradient(
 		90deg, #859398 30%,
-        rgb(240, 245, 245)50%);
-
+        rgb(240, 245, 245)50%);*/
 	/*background: linear-gradient(to right, #859398,#dce9e8);*/
 }
 
-.container-card-primary{
+.container-card-primary {
 	padding-top: 100px;
 }
 
-.card-primary{
+.card-primary {
 	width: 100%;
 	margin: auto;
 	background: linear-gradient(to bottom ,rgb(0 0 0/.5),rgb(0 0 0 / .5)), url("../IMAGES PRUEBA/images-fondo-07.jpg"); 
 	background-repeat: no-repeat;
-		background-attachment: fixed;
-		background-size: 100% 100%;
-		color:#ffffff;		
-
+	background-attachment: fixed;
+	background-size: 100% 100%;
+	color: #ffffff;
 	padding: 0px 25px;
-	/*background: linear-gradient( /* se define el color de fondo del tooltips ( degradado en gris
-	90deg, #859398 20%,
-	rgb(240, 245, 245)40%);*/
 }
 
-.text-card-primary{
-	/*max-width: 1200px;*/	
+.text-card-primary {
 	margin: auto;
-}
-
-/*Configuracion de Titulos*/
-.text-card-primary p{
-	
-	text-align: center;
-    letter-spacing: 4px;
-    font-size: 18px;
-	font-weight: 100;
 	padding: 20px;
-	
 }
 
-.text-card-primary h1{
+/* Configuración de Títulos */
+.text-card-primary p {
+	text-align: center;
+	letter-spacing: 4px;
+	font-size: 40px;
+	font-weight: 100;
+	padding: 30px;
+}
+
+.text-card-primary h1 {
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	text-align: center;
 	font-size: 30px;
 	font-weight: 100px;
-	color:rgba(252, 204, 47, 0.945);	
-	text-shadow: 0 0 8px rgba(8, 8, 8, 0.8);
-	
-	/*color: var(--color-text-segundario);*/
+	color: rgba(252, 204, 47, 0.945);	
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
-.container-box-cardPrimary{
-
-	display:flex;
-	justify-content:center;
+.container-box-cardPrimary {
+	display: flex;
+	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
 	box-sizing: border-box;
@@ -213,69 +184,54 @@ body {
 	margin-top: 40px;
 }
 
-.box-card-primary{
-	/* Creacion del block ancho y alto*/
-	/*display: block;*/
-	max-width: auto; /*tamaño del box*/
-	padding: 40px 30px; /*ancho y alto de posicion de imagen*/
+.box-card-primary {
+	max-width: auto;
+	padding: 40px 30px;
 	border: 2px solid rgb(105, 103, 103); 
-	border-radius: 20px;
+	border-radius: 10px;
 	margin: 20px auto;
 	width: 100%;
 	transition: all 300ms;
-	
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
-.box-card-primary img{
-	/* centra una imagen dentro del block 
-	ademas le damos el tamaño que deseas NO se nesecita el padding
-	el tamaño del block es el que manda*/
+.box-card-primary img {
 	max-width: 400px;
 	width: 400px;		
 	height: 250px;
-	margin-right: 15px;
-	border-radius: 20px;
+	margin-right: 20px;
+	border-radius: 10px;
 	border: 3px solid white;
-	float:left;
-	margin-right: 15px;
+	float: left;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-.box-card-primary:hover{
+.box-card-primary:hover {
 	border: 0px solid rgb(34, 33, 33);
 	box-shadow: var(--box-shadow-primary);	
 	cursor: pointer;
 }
 
-.box-card-primary h2{
+.box-card-primary h2 {
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-	font-size: 35p;
-	/*margin-top: 30px;*/
-	font-weight: 100px;	
-	/*top: 10px;
-	left: 350px;*/
-	color:rgba(69, 247, 193, 0.945);	
-	text-shadow: 0 0 8px rgba(8, 8, 8, 0.8);
-	
+	font-size: 28px;
+	font-weight: 100px;
+	color: rgba(69, 247, 193, 0.945);	
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
-.box-card-primary p{
-	/*margin-top: 40px;
-	text-align: left;
-	top: 500px;
-	left: 300px*/
-	
-	color:white
+.box-card-primary p {
+	color: white;
 }
 
-
-/* Seccion sobre la Empresa*/
-.container-about{
+/* Sección sobre la Empresa */
+.container-about {
 	padding: 100px 0px;
 	background: rgb(243, 237, 237);
 	margin-top: 100px;
 }
 
-.about{
+.about {
 	max-width: 1200px;
 	margin: auto;
 	display: flex;
@@ -283,46 +239,55 @@ body {
 	justify-content: center;
 }
 
-.text-about{
+.text-about {
 	width: 100%;
 	padding-right: 40px;
 }
 
-.text-about h1{
-	color : var(--text-paragrah);
+.text-about h1 {
+	color: var(--text-paragrah);
 	font-weight: 600px;
 }
 
-.text-about p{
+.text-about p {
 	font-size: var(--text-paragrah);
 	margin-top: 40px;
 	color: var(--color-text-tercero);
 }
 
-.image-about{
+.image-about {
 	width: 90%;
 	display: flex;
 }
 
-.image-about img{
-	/* le damos el tamaño de imagen y la separacion entre 
-	cada imagen */
+.image-about img {
 	padding: 10px;
 	width: 250px;
 }
 
-/*  Servicios */
-.card-service img{
-	width:50px;
+/* Servicios */
+.card-service img {
+	width: 50px;
 }
 
-.card-service i{
+.card-service i {
 	font-size: 24px;
 	margin-top: 20px;
-	cursor:pointer
+	cursor: pointer;
 }
-	
 
+/* Responsividad */
+@media (max-width: 768px) {
+	.text-cover h1 {
+		font-size: 40px;
+	}
 
+	.box-card-primary img {
+		width: 100%;
+		height: auto;
+	}
 
-
+	.box-card-primary {
+		padding: 20px;
+	}
+}
