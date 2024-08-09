@@ -14,7 +14,7 @@
 	margin: auto;
     padding-top: 10px;
 	/*padding-bottom: 100px;*/
-	background: linear-gradient(to bottom ,rgb(0 0 0/.5),rgb(0 0 0 / .5)), url("../img/imagen-fondo-02.jpg"); 
+	background: linear-gradient(to bottom ,rgb(0 0 0/.1),rgb(0 0 0 / .1)), url("../img/imagen-fondo-02.jpg"); 
 	/* 	coloca una imagen solo en una parte del formulario
 		en este caso en la pantalla principal del (<main>)
 		background: var(--main-color-secundario);  */
