@@ -50,7 +50,6 @@
 	text-shadow: 0 0 8px rgba(8, 8, 8, 0.8);
 }
 
-
 .container-equipamiento-img{
     padding: 15px;   
     display: inline-block;    
@@ -64,7 +63,7 @@
 
 .container-equipamiento-img img{
    /* margin-left: 30px;*/
-   top:100px;
+   	top:100px;
     width: 150px;
     height: 120px;
 }
