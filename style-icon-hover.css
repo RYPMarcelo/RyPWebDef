@@ -31,7 +31,7 @@
     color:rgb(241, 238, 11); /* Color de inicio de imagen */
     margin-right: 150px; /* ceparacion entre los iconos hacia la derecha */
     text-align: center; /* Imagen centrada */
-    background-color: rgb(24, 26, 129); /* color de fondo de imagen */
+    background-color: rgb(8, 8, 8); /* color de fondo de imagen */
     border-radius: 50px; /* genera una circunferencia */
     margin-bottom: 100px; /* hace una separacion entre las opciones de <a> */    
 }
@@ -41,7 +41,7 @@
 }
 
 .toolstips::after,
-.toolstips::before{
+.toolstips::before{ 
     content: '';
     position:absolute;
     background: linear-gradient( /* se define el color de fondo del tooltips ( degradado en gris*/
