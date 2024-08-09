@@ -1,293 +1,295 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="styles');
 
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing:border-box;
-	text-decoration: none;
-	font-family: "Poppins", sans-serif;
-	
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
 }
 
-/* Se establece la imagen de fondo corpoativa */
+/* Sección 1: Estilos generales del body */
 body {
-	margin: auto;
-	padding: auto;
-	/* background: url("../img/fondo-06.jpg"); coloca una imagen a todo lo que esta en el body 
-	background-size: cover;
-	background-position: center; */
+    margin: auto;
+    padding: auto;
+    /* background: url("../img/fondo-06.jpg"); coloca una imagen a todo lo que esta en el body 
+    background-size: cover;
+    background-position: center; */
 }
 
-/* Creacion de Variables */
+/* Creación de Variables */
 :root {
-	--color-text-primario: #0d1A94;
-	--color-text-segundario: black;
-	--color-text-tercero: #74b4f0;
-	--main-color-primario: #9A00BF;
-	--main-color-secundario: #F4D4FB;
-	--fondo-color: #FAFBFC;
-	--lowtext-font-size: 16px;
-	--text-size-title:35px;
-	--text-title-card: 20px;
-	--text-title-cardv2:20px;
-	--text-paragrah: 20px;
-	--box-shadow-primary: 0px 6px 50px -20px rgba(8, 8, 5, 0.2);
+    --color-text-primario: #0d1A94;
+    --color-text-segundario: black;
+    --color-text-tercero: #74b4f0;
+    --main-color-primario: #9A00BF;
+    --main-color-secundario: #F4D4FB;
+    --fondo-color: #FAFBFC;
+    --lowtext-font-size: 16px;
+    --text-size-title: 35px;
+    --text-title-card: 20px;
+    --text-title-cardv2: 20px;
+    --text-paragrah: 20px;
+    --box-shadow-primary: 0px 6px 50px -20px rgba(8, 8, 5, 0.2);
 }
 
-/* Botón Cotizar */
-.boton_cotizar{
-	display: block;
-	padding: 8px 30px;
-	border:  1px solid var(--main-color-primario);
-	border-radius: 8px;
-	font-weight: 10px;
-	margin: 0px 10px; 
-	color:black;
-	transition: all 300ms;
+/* Sección 2: Botón Cotizar */
+.boton_cotizar {
+    display: block;
+    padding: 8px 30px;
+    border: 1px solid var(--main-color-primario);
+    border-radius: 8px;
+    font-weight: 10px;
+    margin: 0px 10px;
+    color: black;
+    transition: all 300ms;
 }
 
-.boton_cotizar:hover{
-	color: white;
-	background: rgb(109, 71, 214);
-}  
-
-/* Definicion de portada de inicio */
-.container-cover{
-	padding-top: 10px;
-	background: linear-gradient(to bottom ,rgb(0 0 0/.5),rgb(0 0 0 / .5)), url("../img/fondo-bodeg-01.png"); 
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: 100% 100%;
-	color: #ffffff;
+.boton_cotizar:hover {
+    color: white;
+    background: rgb(109, 71, 214);
 }
 
-.cover{
-	max-width: 1200px;
-	margin: auto;
-	margin-top: 50px;
-	display: flex;
-	align-items: center;
-	padding: 0px 20px;
+/* Sección 3: Portada de inicio */
+.container-cover {
+    padding-top: 10px;
+    background: linear-gradient(to bottom, rgb(0 0 0 / .5), rgb(0 0 0 / .5)), url("../img/fondo-bodeg-01.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    color: #ffffff;
 }
 
-.text-cover{
-	width: 100%;
-	padding-right: 120px;
+.cover {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
 }
 
-.text-cover h1 {	
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-	color: rgba(165, 217, 241, 0.945);	
-	text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
-	font-weight: bold;
-	font-size: 60px;
+.text-cover {
+    width: 100%;
+    padding-right: 120px;
 }
 
-.text-cover p {	
-	font-size: 20px;
-	margin-top: 20px;	
-	color: rgba(235, 238, 240, 0.945);
-	text-shadow: 0 0 8px rgba(10, 10, 10, 0.8);
-	text-align: left;
-	position: 100px;		
+.text-cover h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgba(165, 217, 241, 0.945);
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.text-cover p {
+    font-size: 20px;
+    margin-top: 20px;
+    color: rgba(235, 238, 240, 0.945);
+    text-shadow: 0 0 8px rgba(10, 10, 10, 0.8);
+    text-align: left;
+    position: 100px;
 }
 
 .image-cover-fondo-linea {
-	width: 100%;
-} 
+    width: 100%;
+}
 
 .image-cover-fondo-linea img {
-	padding: 0px;
-	position: 20px;
-	width: 340px;
-	height: 500px;
+    padding: 0px;
+    position: 20px;
+    width: 340px;
+    height: 500px;
 }
 
 /* Botón de Texto */
 .boton-text {
-	display: block;
-	width: 150px;
-	margin-top: 40px;
-	padding: 10px 20px;
-	text-align: center;
-	font-weight: 500;
-	background: var(--main-color-primario);
-	color: white;
-	border-radius: 8px;
-	border: 2px solid transparent;
-	cursor: pointer;
-	transition: all 300ms;
+    display: block;
+    width: 150px;
+    margin-top: 40px;
+    padding: 10px 20px;
+    text-align: center;
+    font-weight: 500;
+    background: var(--main-color-primario);
+    color: white;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 300ms;
 }
 
 .boton-text:hover {
-	background: transparent;
-	border: 2px solid black;
-	color: var(--color-text-primario);
+    background: transparent;
+    border: 2px solid black;
+    color: var(--color-text-primario);
 }
 
-/* Estilos Generales Segunda Parte */
+/* Sección 4: Segunda Parte */
 .container-trust {
-	max-width: 1200px;
-	margin: auto;
-	/*background-color: #98e6ec;
-	background: linear-gradient(
-		90deg, #859398 30%,
+    max-width: 1200px;
+    margin: auto;
+    /*background-color: #98e6ec;
+    background: linear-gradient(
+        90deg, #859398 30%,
         rgb(240, 245, 245)50%);*/
-	/*background: linear-gradient(to right, #859398,#dce9e8);*/
+    /*background: linear-gradient(to right, #859398,#dce9e8);*/
 }
 
 .container-card-primary {
-	padding-top: 100px;
+    padding-top: 100px;
 }
 
 .card-primary {
-	width: 100%;
-	margin: auto;
-	background: linear-gradient(to bottom ,rgb(0 0 0/.5),rgb(0 0 0 / .5)), url("../IMAGES PRUEBA/images-fondo-07.jpg"); 
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: 100% 100%;
-	color: #ffffff;
-	padding: 0px 25px;
+    width: 100%;
+    margin: auto;
+    background: linear-gradient(to bottom, rgb(0 0 0 / .5), rgb(0 0 0 / .5)), url("../img/imagen-fondo-03.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    color: #ffffff;
+    padding: 0px 25px;
 }
 
 .text-card-primary {
-	margin: auto;
-	padding: 20px;
+    margin: auto;
+    padding: 20px;
 }
 
 /* Configuración de Títulos */
 .text-card-primary p {
-	text-align: center;
-	letter-spacing: 4px;
-	font-size: 40px;
-	font-weight: 100;
-	padding: 30px;
+    text-align: center;
+    letter-spacing: 4px;
+    font-size: 40px;
+    font-weight: 100;
+    padding: 30px;
 }
 
 .text-card-primary h1 {
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-	text-align: center;
-	font-size: 30px;
-	font-weight: 100px;
-	color: rgba(252, 204, 47, 0.945);	
-	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 100px;
+    color: rgba(252, 204, 47, 0.945);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 .container-box-cardPrimary {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	min-height: 100vh;
-	box-sizing: border-box;
-	flex-wrap: wrap;	
-	margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    margin-top: 40px;
 }
 
 .box-card-primary {
-	max-width: auto;
-	padding: 40px 30px;
-	border: 2px solid rgb(105, 103, 103); 
-	border-radius: 10px;
-	margin: 20px auto;
-	width: 100%;
-	transition: all 300ms;
-	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    max-width: auto;
+    padding: 40px 30px;
+    border: 2px solid rgb(105, 103, 103);
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 100%;
+    transition: all 300ms;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
 .box-card-primary img {
-	max-width: 400px;
-	width: 400px;		
-	height: 250px;
-	margin-right: 20px;
-	border-radius: 10px;
-	border: 3px solid white;
-	float: left;
-	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 400px;
+    height: 250px;
+    margin-right: 20px;
+    border-radius: 10px;
+    border: 3px solid white;
+    float: left;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .box-card-primary:hover {
-	border: 0px solid rgb(34, 33, 33);
-	box-shadow: var(--box-shadow-primary);	
-	cursor: pointer;
+    border: 0px solid rgb(34, 33, 33);
+    box-shadow: var(--box-shadow-primary);
+    cursor: pointer;
 }
 
 .box-card-primary h2 {
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-	font-size: 28px;
-	font-weight: 100px;
-	color: rgba(69, 247, 193, 0.945);	
-	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 28px;
+    font-weight: 100px;
+    color: rgba(69, 247, 193, 0.945);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 .box-card-primary p {
-	color: white;
+    color: white;
 }
 
-/* Sección sobre la Empresa */
+/* Sección 5: Sobre la Empresa */
 .container-about {
-	padding: 100px 0px;
-	background: rgb(243, 237, 237);
-	margin-top: 100px;
+    padding: 100px 0px;
+    background: rgb(243, 237, 237);
+    margin-top: 100px;
 }
 
 .about {
-	max-width: 1200px;
-	margin: auto;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .text-about {
-	width: 100%;
-	padding-right: 40px;
+    width: 100%;
+    padding-right: 40px;
 }
 
 .text-about h1 {
-	color: var(--text-paragrah);
-	font-weight: 600px;
+    color: var(--text-paragrah);
+    font-weight: 600px;
 }
 
 .text-about p {
-	font-size: var(--text-paragrah);
-	margin-top: 40px;
-	color: var(--color-text-tercero);
+    font-size: var(--text-paragrah);
+    margin-top: 40px;
+    color: var(--color-text-tercero);
 }
 
 .image-about {
-	width: 90%;
-	display: flex;
+    width: 90%;
+    display: flex;
 }
 
 .image-about img {
-	padding: 10px;
-	width: 250px;
+    padding: 10px;
+    width: 250px;
 }
 
-/* Servicios */
+/* Sección 6: Servicios */
 .card-service img {
-	width: 50px;
+    width: 50px;
 }
 
 .card-service i {
-	font-size: 24px;
-	margin-top: 20px;
-	cursor: pointer;
+    font-size: 24px;
+    margin-top: 20px;
+    cursor: pointer;
 }
 
-/* Responsividad */
+
+
+/* Sección 7: Responsividad */
 @media (max-width: 768px) {
-	.text-cover h1 {
-		font-size: 40px;
-	}
+    .text-cover h1 {
+        font-size: 40px;
+    }
 
-	.box-card-primary img {
-		width: 100%;
-		height: auto;
-	}
+    .box-card-primary img {
+        width: 100%;
+        height: auto;
+    }
 
-	.box-card-primary {
-		padding: 20px;
-	}
+    .box-card-primary {
+        padding: 20px;
+    }
 }
