@@ -1,68 +1,74 @@
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.querySelector('#user-form');
+    const submitButton = document.querySelector('#submit-btn');
+    const successMessage = document.querySelector('#formulario--mensaje-exito');
+    const errors = {
+        nickName: true, // Inicialmente, asumimos que hay un error
+        email: true,
+        mensaje: true
+    };
 
-const expresiones = {
-    usuario: /^[a-zA-Z0-9\_\-]{4,16}$/,
-    nombre: /^[a-zA-Z\s]{4,30}$/,
-    password: /^.{4,12}$/,
-    correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-,]+$/,
-    mensaje: /^[a-zA-Z\s]{1,100}$/,
-    telefono: /^\d{8,16}$/,
-};
+    function validacion(box, boxInput) {
+        if (boxInput.name === 'nickName') {
+            if (boxInput.value.trim() === '') {
+                showError(true, box, boxInput);
+            } else {
+                showError(false, box, boxInput);
+            }
+        } else if (boxInput.name === 'email') {
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(boxInput.value)) {
+                showError(true, box, boxInput);
+            } else {
+                showError(false, box, boxInput);
+            }
+        } else if (boxInput.name === 'mensaje') {
+            if (boxInput.value.trim() === '') {
+                showError(true, box, boxInput);
+            } else {
+                showError(false, box, boxInput);
+            }
+        }
+        submitController();
+    }
 
-const form = document.getElementById('user-form');
-const submitButton = document.getElementById('submit-btn');
-
-let timeout = null;
-
-let errors = {
-    nickName: true,
-}
-
-document.querySelectorAll('.form-box').forEach((box) => {
-    const boxInput = box.querySelector('input');
-    boxInput.addEventListener('keydown', (event) => {clearTimeout(timeout);
-         timeout = setTimeout(() => {     
-            validacion(box, boxInput);
-        }, 300);
-    });
-})
-
-
-function validacion (box, boxInput) {
-    if (boxInput.name == 'nickName') {
-        if (boxInput.value == '') {
-            showError(true, box, boxInput);
+    function showError(check, box, boxInput) {
+        if (check) {
+            box.classList.remove('form-success');
+            box.classList.add('form-error');
+            errors[boxInput.name] = true;
         } else {
-            showError(false, box, boxInput);
+            box.classList.remove('form-error');
+            box.classList.add('form-success');
+            errors[boxInput.name] = false;
         }
     }
-    submitController();
-}
 
-function showError (check, box, boxInput) {  
-    if (check) {
-        box.classlist.remove('form-success');
-        box.classlist.add('form-error');
-        errors[boxInput.name] = true;
-    } else {
-        box.classlist.remove('form-error');
-        box.classlist.add('form-success');
-        errors[boxInput.name] = false;
+    function submitController() {
+        const hasErrors = Object.values(errors).some(error => error);
+        if (hasErrors) {
+            submitButton.setAttribute('disabled', true);
+        } else {
+            submitButton.removeAttribute('disabled');
+        }
     }
-};
 
+    form.addEventListener('input', (event) => {
+        const box = event.target.closest('.form-box');
+        validacion(box, event.target);
+    });
 
-function submitController() {
-    if (error.nickName) {
-        submitButton.toggleAttribute('disabled', true);
-    } else {
-        submitButton.toggleAttribute('disabled', false);
-    }
-};
-
-
-form.addEventListener('submit', (event) => {
-    event.preventDefault();
-    const formData = new formData(event.target)
-    for (let [key, value] of formData.entries()) { }
-
-})
+    form.addEventListener('submit', (event) => {
+        const hasErrors = Object.values(errors).some(error => error);
+        if (hasErrors) {
+            event.preventDefault();
+            alert('Por favor, rellena todos los campos correctamente.');
+        } else {
+            // No prevenir el envío del formulario
+            successMessage.classList.add('show');
+            setTimeout(() => {
+                successMessage.classList.remove('show');
+            }, 3000); // Ocultar el mensaje después de 5 segundos
+        }
+    });
+});

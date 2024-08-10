@@ -121,10 +121,17 @@ body h1 {
     font-size: 20px;
 }
 
+
+
 .form button:disabled {
     background: #82a0a2;
     border: 1px solid #82a0a2;
     color: lightgrey;
+}
+.contac-form-btn:enabled {
+    background: #4CAF50; /* Cambia este color al que prefieras */
+    color: white; /* Cambia este color al que prefieras */
+    border: 1px solid #4CAF50; /* Cambia este color al que prefieras */
 }
 
 .form-box.form-error input{
@@ -143,7 +150,24 @@ body h1 {
     outline: 1px solid rgb(17, 248, 248);
     box-shadow: 0px 0px 10px 0px #666;
 }*/
+/* Estilo para la alerta de éxito */
+.formulario--mensaje-exito {
+    display: none; /* Oculto por defecto */
+    background-color: #4CAF50; /* Color de fondo verde */
+    color: white; /* Color del texto */
+    padding: 15px; /* Espaciado interno */
+    margin: 20px 0; /* Margen superior e inferior */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    font-family: 'Montserrat', sans-serif; /* Fuente */
+    font-size: 16px; /* Tamaño de la fuente */
+    text-align: center; /* Centrar el texto */
+}
 
+/* Mostrar la alerta cuando se agrega la clase 'show' */
+.formulario--mensaje-exito.show {
+    display: block;
+}
 
 /* Se optiene el focus de cada input*/
 .contac-form-txt:focus,
