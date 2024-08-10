@@ -54,7 +54,7 @@ body {
 /* Sección 3: Portada de inicio */
 .container-cover {
     padding-top: 10px;
-    background: linear-gradient(to bottom, rgb(0 0 0 / .5), rgb(0 0 0 / .5)), url("../img-prod-destacados/fondo-inicial-ryp.jfif");
+    background: linear-gradient(to bottom, rgb(0 0 0 / .2), rgb(0 0 0 / .2)), url("../img-prod-destacados/fondo-inicial-ryp.jfif");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
@@ -145,7 +145,7 @@ body {
 .card-primary {
     width: 100%;
     margin: auto;
-    background: linear-gradient(to bottom, rgb(0 0 0 / .5), rgb(0 0 0 / .5)), url("../img/imagen-fondo-03.jpg");
+    background: linear-gradient(to bottom, rgb(0 0 0 / .2), rgb(0 0 0 / .2)), url("../img/imagen-fondo-03.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
