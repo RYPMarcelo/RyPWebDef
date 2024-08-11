@@ -31,34 +31,6 @@
 		<!--<script defer src="./eliminarEventos.js"></script>-->
 		<title>Comercializadora R&P</title>
 
-		<script type="text/javascript">
-			var deslices = document.querySelectorall('.deslice');
-			var btns = document.querySelectorall('.btn');
-			let currentSlider = 1
-	
-			var manualNav = function(manual){
-	
-				deslices.forEach((deslice) =>{
-				deslice.classlist.remove('active')						
-	
-				btns.forEach((btn) => {
-				btn.classlist.remove('active')
-	
-					})	
-				})	
-	
-			deslices[manual].classlist.add('active');
-			btns[manual].classlist.add('active');
-			}
-	
-			btns.forEach((btn, i) => {
-				btn.addEventlistener("click",() =>{
-					manualNav(i)
-					currentSlider = i 
-				})
-			});
-		</script>
-
 	</head>
 	<body>
 				
@@ -277,7 +249,7 @@
 				
 				<div class="img-deslice">
 					<div class="deslice active">
-						<img src="../img-prod-destacados/160672-150-auto-zapato-quebec-400.webp" alt="">
+						<img src="../sin-fondo/160672-150-auto-zapato-quebec-400.png" alt="">
 						<div class="info">
 							<h2>Zapato Quebec 400</h2>
 							<p>Lorem ipsum dolor 
@@ -313,7 +285,7 @@
 						</div>
 					</div>				
 					<div class="deslice">
-						<img src="../img-prod-destacados/168274-150-botin-mujer-ventus-pro-beige.webp" alt="">
+						<img src="../img-prod-destacados/168274-150-botin-mujer-ventus-pro-beige.webp" alt="">						
 						<div class="info">
 							<h2>Quebec California TX</h2>
 							<p>Lorem ipsum dolor 
@@ -428,8 +400,33 @@
 			<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 
-			
-			
+			<script type="text/javascript">
+				var deslices = document.querySelector('.deslice');
+				var btns = document.querySelector('.btn');
+
+				let currentSlider = 1;
+
+				var manualNav = function(manual){		
+					deslices.forEach((deslice) =>{
+					deslice.classlist.remove('active');
+		
+						btns.forEach((btn) =>{
+						btn.classlist.remove('active');
+		
+						});	
+					});	
+		
+					deslices[manual].classlist.add('active');
+					btns[manual].classlist.add('active');
+				};
+		
+				btns.forEach((btn,i) => {
+					btn.addEventlistener("click", () => {
+						manualNav(i);
+						currentSlider = i; 
+					});
+				});
+			</script>				
 	</body>
 
 	<!--Ejecucion de slider en movimiento-->
