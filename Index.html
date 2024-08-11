@@ -249,7 +249,7 @@
 				
 				<div class="img-deslice">
 					<div class="deslice active">
-						<img src="../sin-fondo/160672-150-auto-zapato-quebec-400.png" alt="">
+						<img src="../img-prod-destacados/160672-150-auto-zapato-quebec-400.webp" alt="">
 						<div class="info">
 							<h2>Zapato Quebec 400</h2>
 							<p>Lorem ipsum dolor 
@@ -401,14 +401,14 @@
 			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 
 			<script type="text/javascript">
-				var deslices = document.querySelector('.deslice');
-				var btns = document.querySelector('.btn');
+				var deslices = document.getElementsByClassName('deslice');
+				var btns = document.getElementsByClassName('btn');
 
 				let currentSlider = 1;
 
 				var manualNav = function(manual){		
 					deslices.forEach((deslice) =>{
-					deslice.classlist.remove('active');
+					deslices.classlist.remove('active');
 		
 						btns.forEach((btn) =>{
 						btn.classlist.remove('active');
@@ -420,12 +420,36 @@
 					btns[manual].classlist.add('active');
 				};
 		
-				btns.forEach((btn,i) => {
-					btn.addEventlistener("click", () => {
+				/*btns.forEach((btn,i) => {
+						btn.addEventlistener("click", e => {
 						manualNav(i);
 						currentSlider = i; 
 					});
-				});
+				})*/
+
+				var repeat = function(activeClass){
+					let active = document.getElementsByClassName('active');
+					let i = 1;
+
+					var repeater = () => {				
+						setTimeout(function(){				
+						
+						deslices[i].classList.add('active');
+						btns[i].classList.add('active');
+						i++;
+
+						if(deslices.length == i){
+							i = 1;
+						}
+						if(i >= deslices.length){
+							return;
+						}
+						repeater()
+					},10000);				
+				}
+				repeater();
+			}
+			repeat(); 
 			</script>				
 	</body>
 
@@ -439,8 +463,6 @@
 			})
 		})
 	</script>
-	
-	
 	
 
 	<!--Creacion del footer ( Pie de pagina ) de la empresa-->

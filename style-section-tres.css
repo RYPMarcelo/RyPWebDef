@@ -63,14 +63,14 @@
 	z-index: 1;	
 	position: absolute;
 	width: 100%;	
-	/*clip-path: circle(50 at  );*/
+	clip-path: circle(0% at 0 50% );
 }
 
-.img-deslice .deslice .active{	
-	/*clip-path: circle(0% at  100%);
+.img-deslice .deslice.active{	
+	clip-path: circle(150% at 0 100%);
 	transition: 2s;
-	transition-property: clip-path;*/
-	transition: 2s;
+	transition-property: clip-path;
+	
 }
 
 .img-deslice .deslice img{
