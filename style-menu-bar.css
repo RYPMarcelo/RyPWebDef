@@ -8,7 +8,7 @@
 }
 
 /*se define el ancho total de la pagina */
-.container {
+.container-menu {
     max-width: 1200px;
     margin: 0 auto;
 }
