@@ -120,13 +120,12 @@ body h1 {
     font-size: 20px;
 }
 
-
-
 .form button:disabled {
     background: #82a0a2;
     border: 1px solid #82a0a2;
     color: lightgrey;
 }
+
 .contac-form-btn:enabled {
     background: #4CAF50; /* Cambia este color al que prefieras */
     color: white; /* Cambia este color al que prefieras */
