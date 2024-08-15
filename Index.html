@@ -13,7 +13,7 @@
 		<!--awesome-->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-		<!--materiaiza para carousel elementos destacados-->
+		<!--materialize para carousel elementos destacados-->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
 		<!--boottrasp diseñps ya establecidos en este caso utilizo slider-->
@@ -30,14 +30,12 @@
 		<link rel="stylesheet" href="style-section-tres.css"/>
 		<link rel="stylesheet" href="style-section-destacados.css"/>
 		<link rel="stylesheet" href="whatsapp.css">
-
 		
 		<!--<script defer src="./eliminarEventos.js"></script>-->
-		<title>Comercializadora R&P</title>
+		<title>Comercializadora R & P</title>
 
 	</head>
-	<body>
-				
+	<body>				
 		<!--Header del menu
 		En esta seccion se da comienzo a la estructura de la pagina
 		empesamos definiendo una cabezera con  un menu de navegacion
@@ -65,9 +63,11 @@
 						<ul>
 							<!--Se indica una clase para dar con el boton remarcado al inicio-->
 							<li><a class="active" href="index.html">INICIO</a></li>
-							<li><a href	="#">RUBROS</a></li>
+							<li><a href	="#empresa">EMPRESA</a></li>
+							<li><a href	="#sectores">SECTORES</a></li>							
+							<li><a href	="#destacado">DESTACADOS</a></li>
 							<li><a href	="#">PRODUCTOS</a></li>
-							<li><a href	="#">CATALOGOS</a></li>
+							<li><a href	="catalogos.html">CATALOGOS</a></li>
 							<li><a href	="contacto.html">CONTACTO</a></li>
 						</ul>
 					</nav>					
@@ -80,8 +80,7 @@
 			<!-- PORTADA DE INICIO quien la empresa-->
 			<div class ="container-cover"> <!--div offset-->
 				<div class ="cover">
-
-					<section class="text-cover">
+					<section class="text-cover" id="main">
 						<!--Titulo Principal Pagina
 						<h1>Trabajo inteligente con infinitas posibilidades</h1>-->
 						<h1>Nuestro Compromiso </h1>
@@ -123,159 +122,164 @@
 			<!-- Seccion uno -->
 			<!-- Ejes de la Empresa pagina dos-->
 			<div class="trust card-primary">
-				<div class="text-trust text-card-primary">
-					<!--Titulo de pagina-->
-					<p>QUE HACEMOS EN NUESTRA EMPRESA ?</p>
-					<h1>Ejes Principales</h1>
-				</div>
+				<section class="empresa" id="empresa">
+					<div class="text-trust text-card-primary">
+						<!--Titulo de pagina-->
+						<p>QUE HACEMOS EN NUESTRA EMPRESA ?</p>
+						<h1>Ejes Principales</h1>
+					</div>
 
-				<div class="container-trust container-box-cardPrimary">
-					<div class="card-trust box-card-primary">
-						<!--<img src="../img-prod-destacados/160672-150-auto-zapato-quebec-400.webp" alt="">-->
-						<img src="../img/imagen-corporativo-01.jpg" alt="">
-						<h2>Vestuario Corporativo</h2>							
-						<p>Lorem ipsum dolor sit amet, 
+					<div class="container-trust container-box-cardPrimary">
+						<div class="card-trust box-card-primary">
+							<!--<img src="../img-prod-destacados/160672-150-auto-zapato-quebec-400.webp" alt="">-->
+							<img src="../img/imagen-corporativo-01.jpg" alt="">
+							<h2>Vestuario Corporativo</h2>							
+							<p>Lorem ipsum dolor sit amet, 
 							consectetur adipisicing elit. Quis aspernatur quos doloribus dolores architecto, 
 							expedita totam laborum neque fuga in hic provident tenetur voluptates corrupti magni
 							 harum facere maxime. Alias! Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
 							 Labore doloribus suscipit provident. Officia tempore doloremque repellendus reiciendis,
 							 asperiores ipsum consectetur accusamus rem voluptate voluptatum enim hic, sequi necessitatibus optio quo?</p>
-					</div>
+						</div>
 
-					<div class="card-trust box-card-primary">
-						<img src="../img/fondo-bordado-02.jpg" alt="">
-						<h2>Bordado Industrial</h2>
-						<p>Nuestra empresa ademas cuenta con Bordados propios y maquinaria de vanguardia para resaltar la imagen
+						<div class="card-trust box-card-primary">
+							<img src="../img/fondo-bordado-02.jpg" alt="">
+							<h2>Bordado Industrial</h2>
+							<p>Nuestra empresa ademas cuenta con Bordados propios y maquinaria de vanguardia para resaltar la imagen
 							corporativa de tu empresa y en prendas personalizadas.</p>
-					</div>
+						</div>
 
-					<div class="card-trust box-card-primary">
-						<img src="../IMAGES PRUEBA/camion-03.jpg" alt="">
-						<h2>Cobertura</h2>
+						<div class="card-trust box-card-primary">
+							<img src="../IMAGES PRUEBA/camion-03.jpg" alt="">
+							<h2>Cobertura</h2>
 
-						<p>Nuestra empresa cuenta con despacho dentro y fuera 
-				   			de nuestra region, consta con una logistica tanto para 
-							retiro y entrega de mercaderia logrando asi cumplir con 
-							plazos de entrega a nuestros clientes.</p>
-					</div>
-
-					<div class="card-trust box-card-primary">
-						<img src="../IMAGES PRUEBA/ferre-indus-01.jpg" alt="">
-						<h2>Ferreteria Industrial ( EPP )</h2>
-						<p>Los elementos de Seguridad (EPP) son de ultima tecnologia y con los estandares mas altos, 
-							además entregando cada elemento con sus respectivas certificaciones de calidad.</p>
-					</div>
-				</div>			
+							<p>Nuestra empresa cuenta con despacho dentro y fuera 
+								de nuestra region, consta con una logistica tanto para 
+								retiro y entrega de mercaderia logrando asi cumplir con 
+								plazos de entrega a nuestros clientes.</p>
+						</div>
+						<div class="card-trust box-card-primary">
+							<img src="../IMAGES PRUEBA/ferre-indus-01.jpg" alt="">
+							<h2>Ferreteria Industrial ( EPP )</h2>
+							<p>Los elementos de Seguridad (EPP) son de ultima tecnologia y con los estandares mas altos, 
+								además entregando cada elemento con sus respectivas certificaciones de calidad.</p>
+						</div>
+					</div>	
+				</section>		
 			</div>
 
 			<!-- Seccion dos -->
 			<!-- Equipamiento Para cada industria-->			
 			<div class="container-equipamiento">
-				<div class="text-trust text-titulo-equipamiento">
-					<!--Titulo de pagina-->
-					<p>PRINCIPALES SECTORES</p>
-					<h1>Equipamiento para cada industria</h1>
-				</div>
-				<div class="container-img">					
-					<div class="container-equipamiento-img">
-						<img src="../IMAGES PRUEBA/Agroindustria.png" alt="1">						
-						<h1>Agroindustria</h1>
+				<section class="equipamiento" id ="sectores">
+					<div class="text-trust text-titulo-equipamiento">
+						<!--Titulo de pagina-->
+						<p>PRINCIPALES SECTORES</p>
+						<h1>Equipamiento para cada industria</h1>
 					</div>
-					<div class="container-equipamiento-img">
-						<img src="../IMAGES PRUEBA/Bodegaje.png" alt="2">
-						<h1>Bodegaje</h1>
+					<div class="container-img">					
+						<div class="container-equipamiento-img">
+							<img src="../IMAGES PRUEBA/Agroindustria.png" alt="1">						
+							<h1>Agroindustria</h1>
+						</div>
+						<div class="container-equipamiento-img">
+							<img src="../IMAGES PRUEBA/Bodegaje.png" alt="2">
+							<h1>Bodegaje</h1>
+						</div>
+						
+						<div class="container-equipamiento-img">
+							<img src="../IMAGES PRUEBA/Comercio.png" alt="3">
+							<h1>Comercio</h1>					
+						</div>					
+						<div class="container-equipamiento-img">
+							<img src="../IMAGES PRUEBA/Construccion.png" alt="4">
+							<h1>Construccion</h1>						
+						</div>
+						<div class="container-equipamiento-img">
+							<img src="../IMAGES PRUEBA/Logistica.png" alt="4">
+							<h1>Logistica</h1>						
+						</div>
+						<div class="container-equipamiento-img">
+							<img src="../IMAGES PRUEBA/Mineria.png" alt="4">
+							<h1>Mineria</h1>						
+						</div>
+						<div class="container-equipamiento-img">
+							<img src="../IMAGES PRUEBA/Obras-Civiles.png" alt="4">
+							<h1>Obras-Civiles</h1>						
+						</div>
+						<div class="container-equipamiento-img">
+							<img src="../IMAGES PRUEBA/Pesca.png" alt="4">
+							<h1>Pesca</h1>						
+						</div>
+						<div class="container-equipamiento-img">
+							<img src="../IMAGES PRUEBA/Quimicas.png" alt="4">
+							<h1>Quimica</h1>						
+						</div>
+						<div class="container-equipamiento-img">
+							<img src="../IMAGES PRUEBA/Retail.png" alt="4">
+							<h1>Retail</h1>						
+						</div>
+						<div class="container-equipamiento-img">
+							<img src="../IMAGES PRUEBA/Telecomunicaciones.png" alt="4">
+							<h1>Telecomunicación</h1>						
+						</div>
+						<div class="container-equipamiento-img">
+							<img src="../IMAGES PRUEBA/turismo-y-HOTEL.png" alt="4">
+							<h1>Turismo y Hoteleria</h1>						
+						</div>
 					</div>
-					
-					<div class="container-equipamiento-img">
-						<img src="../IMAGES PRUEBA/Comercio.png" alt="3">
-						<h1>Comercio</h1>					
-					</div>					
-					<div class="container-equipamiento-img">
-						<img src="../IMAGES PRUEBA/Construccion.png" alt="4">
-						<h1>Construccion</h1>						
-					</div>
-					<div class="container-equipamiento-img">
-						<img src="../IMAGES PRUEBA/Logistica.png" alt="4">
-						<h1>Logistica</h1>						
-					</div>
-					<div class="container-equipamiento-img">
-						<img src="../IMAGES PRUEBA/Mineria.png" alt="4">
-						<h1>Mineria</h1>						
-					</div>
-					<div class="container-equipamiento-img">
-						<img src="../IMAGES PRUEBA/Obras-Civiles.png" alt="4">
-						<h1>Obras-Civiles</h1>						
-					</div>
-					<div class="container-equipamiento-img">
-						<img src="../IMAGES PRUEBA/Pesca.png" alt="4">
-						<h1>Pesca</h1>						
-					</div>
-					<div class="container-equipamiento-img">
-						<img src="../IMAGES PRUEBA/Quimicas.png" alt="4">
-						<h1>Quimica</h1>						
-					</div>
-					<div class="container-equipamiento-img">
-						<img src="../IMAGES PRUEBA/Retail.png" alt="4">
-						<h1>Retail</h1>						
-					</div>
-					<div class="container-equipamiento-img">
-						<img src="../IMAGES PRUEBA/Telecomunicaciones.png" alt="4">
-						<h1>Telecomunicación</h1>						
-					</div>
-					<div class="container-equipamiento-img">
-						<img src="../IMAGES PRUEBA/turismo-y-HOTEL.png" alt="4">
-						<h1>Turismo y Hoteleria</h1>						
-					</div>
-				</div>
+				</section>
 			</div>
 
 			<!-- Seccion tres -->
 			<!-- Equipamiento Destacado-->
 			
 			<div class="contenedor-primario-section3">
-				<div class="text-head">
-					<!--Titulo de pagina-->
-					<p>articulos destacados</p>
-					<h1>zapatos - botines - botas</h1>					
-				</div>
-				<div class="container">					
-					<div class="row">
-						<div class="col s12">
-							<div class="carousel center-align">
-								<div class="carousel-item">
-									<h2 class="subtitulo-1" >Zapato Quebec 400</h2>
-									<div class="linea-division"></div>
-									<p class="sabor">Lorem ipsum</p>
-									<img src="../img-prod-destacados/160672-150-auto-zapato-quebec-400.webp" alt="">
+				<section class="destacado" id="destacado">
+					<div class="text-head">
+						<!--Titulo de pagina-->
+						<p>articulos destacados</p>
+						<h1>zapatos - botines - botas</h1>					
+					</div>
+					<div class="container">					
+						<div class="row">
+							<div class="col s12">
+								<div class="carousel center-align">
+									<div class="carousel-item">
+										<h2 class="subtitulo-1" >Zapato Quebec 400</h2>
+										<div class="linea-division"></div>
+										<p class="sabor">Lorem ipsum</p>
+										<img src="../img-prod-destacados/160672-150-auto-zapato-quebec-400.webp" alt="">
+									</div>
+									<div class="carousel-item">
+										<h2 class="subtitulo-1" >HW Terrain Pro</h2>
+										<div class="linea-division"></div>
+										<p class="sabor">Lorem ipsum</p>
+										<img src="../img-prod-destacados/165554-150-hw-terrain-pro.webp" alt="">
 								</div>
 								<div class="carousel-item">
-									<h2 class="subtitulo-1" >HW Terrain Pro</h2>
-									<div class="linea-division"></div>
-									<p class="sabor">Lorem ipsum</p>
-									<img src="../img-prod-destacados/165554-150-hw-terrain-pro.webp" alt="">
-							   </div>
-							   <div class="carousel-item">
-									<h2 class="subtitulo-1" >Quebec san Lorenzo</h2>
-									<div class="linea-division"></div>
-									<p class="sabor">Lorem ipsum</p>
-									<img src="../img-prod-destacados/166401-150-quebec-san-lorenzo.webp" alt="">
-							   </div>
-							   <div class="carousel-item">
-									<h2 class="subtitulo-1" >Botin mujer Ventus pro Beige</h2>
-									<div class="linea-division"></div>
-									<p class="sabor">Lorem ipsum</p>
-									<img src="../img-prod-destacados/169393-150-quebec-california-tx.webp" alt="">						
-						   		</div>
+										<h2 class="subtitulo-1" >Quebec san Lorenzo</h2>
+										<div class="linea-division"></div>
+										<p class="sabor">Lorem ipsum</p>
+										<img src="../img-prod-destacados/166401-150-quebec-san-lorenzo.webp" alt="">
+								</div>
 								<div class="carousel-item">
-									<h2 class="subtitulo-1" >Quebec California TX</h2>
-									<div class="linea-division"></div>
-									<p class="sabor">Lorem ipsum</p>
-									<img src="../img-prod-destacados/168274-150-botin-mujer-ventus-pro-beige.webp" alt="">
-						   		</div>
+										<h2 class="subtitulo-1" >Botin mujer Ventus pro Beige</h2>
+										<div class="linea-division"></div>
+										<p class="sabor">Lorem ipsum</p>
+										<img src="../img-prod-destacados/169393-150-quebec-california-tx.webp" alt="">						
+									</div>
+									<div class="carousel-item">
+										<h2 class="subtitulo-1" >Quebec California TX</h2>
+										<div class="linea-division"></div>
+										<p class="sabor">Lorem ipsum</p>
+										<img src="../img-prod-destacados/168274-150-botin-mujer-ventus-pro-beige.webp" alt="">
+									</div>
+								</div>
 							</div>
-						</div>
-					</div>		
-				</div>
+						</div>		
+					</div>
+				</section>
 			</div>
 			<!--Creacion del slider de rubros a cuales trabajamos
 			Este se puede utilizar con distintos tipos de imagenes a representar tipo (BOX)-->

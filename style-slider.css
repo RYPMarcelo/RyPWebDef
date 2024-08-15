@@ -34,7 +34,6 @@
     width: 100%;  
     align-items: center;
     justify-content: center;
-
 }
 
 .slider-text{
@@ -47,8 +46,7 @@
     text-transform: uppercase;	text-align: center;
     letter-spacing: 4px;
     font-size: 40px;
-    font-weight: 100;
-    
+    font-weight: 100;    
 }
 
 .slider-text h1{  

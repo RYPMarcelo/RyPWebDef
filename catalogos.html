@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--awesome-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--style personales-->		
+	<link rel="stylesheet" href="style-menu-bar.css"/>
+	<link rel="stylesheet" href="style-footer.css"/>
+    <link rel="stylesheet" href="style-catalagos.css"/>
+
+    <title>Catálogos R & P</title>
+</head>
+<body>
+     <!--Header del menu
+		En esta seccion se da comienzo a la estructura de la pagina
+		empesamos definiendo una cabezera con  un menu de navegacion
+		que nos indica las opciones que tendra y su logo de empresa
+		 de forma ( RESPONCIVE )-->
+    <header>
+        <div class="content">
+            <!--Logo del menu de inicio de la Empresa-->
+            <div class="menu container-menu">					
+                <!--Se incorpora el icono ( fa-solid fa-bars) para la barra reponsive-->
+                 <a href ="index.html" class ="enlace"></a>
+
+                <!--imagen logo empresa-->
+                <img src ="../img/logoryp-300x140-01-sin-fondo.png" class="menu-ppal" alt="">						
+
+                <input type="checkbox" id="menu">
+                <label for="menu">
+                    <!--Logo corporativo de Empresa para barra de menu-->		
+                    <img src ="" class="menu-icono" alt="">	
+
+                    <!--Icono de barra Responcive-->		
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <nav class="navbar"	>
+                    <ul>
+                        <!--Se indica una clase para dar con el boton remarcado al inicio-->
+                        <li><a class="active" href="index.html">INICIO</a></li>
+                        <!--<li><a href	="#empresa">NUESTRA EMPRESA</a></li>
+                        <li><a href	="#sectores">SECTORES</a></li>							
+                        <li><a href	="#destacado">DESTACADOS</a></li>-->
+                        <li><a href	="#">PRODUCTOS</a></li>
+                        <li><a href	="catalogos.html">CATALOGOS</a></li>
+                        <li><a href	="contacto.html">CONTACTO</a></li>
+                    </ul>
+                </nav>					
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="box_container">
+            <div class="box_slider">
+                <div class="box_slider-text">
+                    <p>CATALOGOS ?</p>
+                    <h1>Descarga Nuestros Catálogos</h1>
+                </div>
+                <div class="box_slider-images">
+                    <img src="../img-prod-destacados/ROPA-CORPORATIVA.jpg" alt="1">
+                </div>
+                <div class="box_slider-images">
+                    <img src="../img-prod-destacados/epp-portada2024.png" alt="2">
+                </div>
+                <div class="box_slider-images">
+                    <img src="../img-prod-destacados/Zapatos-portada2024.png" alt="3">
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+</body>
+</html>
