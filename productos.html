@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <!--awesome-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--style personales-->	
+    <link rel="stylesheet" href="style.css"/>	
+	<link rel="stylesheet" href="style-menu-bar.css"/>
+	<link rel="stylesheet" href="style-footer.css"/>
+   
+
+    <title>Catálogos R & P</title>
+</head>
+<body>
+     <!--Header del menu
+		En esta seccion se da comienzo a la estructura de la pagina
+		empesamos definiendo una cabezera con  un menu de navegacion
+		que nos indica las opciones que tendra y su logo de empresa
+		 de forma ( RESPONCIVE )-->
+    <header>
+        <div class="content">
+            <!--Logo del menu de inicio de la Empresa-->
+            <div class="menu container-menu">					
+                <!--Se incorpora el icono ( fa-solid fa-bars) para la barra reponsive-->
+                 <a href ="index.html" class ="enlace"></a>
+
+                <!--imagen logo empresa-->
+                <img src ="../img/logoryp-300x140-01-sin-fondo.png" class="menu-ppal" alt="">						
+
+                <input type="checkbox" id="menu">
+                <label for="menu">
+                    <!--Logo corporativo de Empresa para barra de menu-->		
+                    <img src ="" class="menu-icono" alt="">	
+
+                    <!--Icono de barra Responcive-->		
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <nav class="navbar"	>
+                    <ul>
+                        <!--Se indica una clase para dar con el boton remarcado al inicio-->
+                        <li><a class="active" href="index.html">INICIO</a></li>
+                        <!--<li><a href	="#empresa">NUESTRA EMPRESA</a></li>
+                        <li><a href	="#sectores">SECTORES</a></li>							
+                        <li><a href	="#destacado">DESTACADOS</a></li>-->
+                        <li><a href	="#">PRODUCTOS</a></li>
+                        <li><a href	="catalogos.html">CATALOGOS</a></li>
+                        <li><a href	="contacto.html">CONTACTO</a></li>
+                    </ul>
+                </nav>					
+            </div>
+        </div>
+    </header>
+
+
+
+    <!--Creacion del footer ( Pie de pagina ) de la empresa-->
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="../img/logoryp-300x140-01-sin-fondo.png" alt="logo-empresa">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>NOSOTROS</h2>
+                <p>Bodega Central: - <b>Av. Pedro aguirre Cerda 7786 Cerrillos</b></p>
+                <p>Sala de Venta: - <b>Camino a Talagante, Paine 1662, local 1 - Talagante</b></p>
+                <p>Horario Atención en Tienda: - <b>Lunes a Viernes: 9:00 a 18:00 hrs</b></p>
+                <p>Horario Atención en OnLine: - <b>Lunes a Viernes: 9:00 a 20:00 hrs</b></p>
+
+            </div>
+            <div class="box-2">
+                <h2>SIGUENOS</h2>
+                <div class="red-social">
+                    <div class="row">
+                        <a href="" class="fab fa-linkedin"style="font-size:28px;"></a>
+                        <label>LinkedIn</label>
+                    </div>
+                    <div class="row">
+                        <a href="" class="fab fa-instagram"style="font-size:28px;"></a>
+                        <label>Instagram</label>
+                    </div>
+                    <div class="row">
+                        <a href="" class="fab fa-twitter" style="font-size:28px;"></a>
+                        <label>Twitter</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <div class="box-3">
+                <div class="red-wa-mail">
+                    <div class="row-1">
+                        <!--<i class="fa-brands fa-amazon" style="font-size:100px;"></i>-->
+                        <a href="" class="fa-brands fa-whatsapp"></a>  
+                        <h5>+ 569 89202496</h5>
+                    </div>
+                    <div class="row-1">
+                        <a href="" class="fa-regular fa-envelope"></a>  
+                        <h5>Ventas@comercializadoraryp.cl</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-3">
+            <small>&copy; 2024 <b>Comercializadora R&P Ltda</b> - Todos los derechos reservados.</small>
+        </div>
+        
+    </footer>
+</html>
