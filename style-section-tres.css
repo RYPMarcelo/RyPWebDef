@@ -8,30 +8,26 @@
 	font-family: "Poppins", sans-serif;
 }
 
-.contenedor-primario-section3{  
-	
+.contenedor-primario-section3{  	
 	justify-content: center;
 	align-items: center;
 	width: auto;
 	height: 800px;
-    padding-top: 10px;
-	
-	background: linear-gradient(to bottom ,rgb(0 0 0/.1),rgb(0 0 0 / .1)), url("../img/imagen-fondo-02.jpg"); 
-	
+    padding-top: 10px;	
+	background: linear-gradient(to bottom ,rgb(0 0 0/.1),rgb(0 0 0 / .1)), url("../img/imagen-fondo-02.jpg"); 	
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: 100% 100%;		
-	color:#ffffff;
-	
-	
+	color:#ffffff;	
 }
+
 .contenedor-primario-section3 .text-head{
 	display: block;
 	justify-content: center;
 	align-items: center;
 	padding: 10px 10px 10px 10px;
-
 }
+
 .text-head h1{	
     padding: 10px;
     text-align: center;
