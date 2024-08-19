@@ -65,22 +65,20 @@ body{
 	width: 1100px;
 	height: 100%;
 	margin-left: 200px;
-	margin-bottom: 100px;
-	
+	margin-bottom: 100px;	
 }
 
-.detail-producto{	
-	
+.detail-producto{		
 	display: inline-flex;
 	width: 320px;
 	height: 320px;
 	padding: 0px 30px;	
 	margin-right: 30px;
-		
+	
 }
 
 .detail-producto img{	
-	position:absolute;
+	position: absolute;
 	width: 300px;
 	height: 300px;	
 	padding: 10px 10px;	
@@ -88,9 +86,10 @@ body{
 }
 
 .detail-producto h2{			
-	position: relative;
+	/*position: relative;*/
+	z-index: 2;
 	padding: 15px 15px;
 	font-size: 18px;	
 	color: rgb(20, 20, 20);	
-	text-shadow: 0 0 8px rgba(8, 8, 8, 0.8);
+	text-shadow: 0 0 8px rgba(245, 241, 241, 0.945);
 }
