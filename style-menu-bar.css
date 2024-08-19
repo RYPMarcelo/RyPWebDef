@@ -8,19 +8,20 @@
 }
 
 /*se define el ancho total de la pagina */
-.container-menu {
+.contenedor-menu {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto;   
 }
 
+
 /*Se define un background del Box con su respectivo (alto o height)*/
-.content {
+.content-menu {
     min-height: 90px;
-    background: rgb(237, 218, 12);
+    background: rgb(237, 218, 12)!important
 }
 
 /*Se centra y justica la posicion del las opciones del barnav* (RESPONCIVE)*/
-.menu {
+.menu-m {
     position: absolute;
     top: 5px;
     left: 0px;
@@ -28,31 +29,34 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+   
 }
  
-.menu .navbar ul li {
+.menu-m .navbar-main ul li {
     position: relative;
     float: left;
+   
 }
 
 /* Se define el tipo o familia de letras, el tamaño, y centrado de esta, color y sin subrayado*/
-.menu .navbar ul li a {
+.menu-m .navbar-main ul li a {
     margin-top: 20px;
     font-family: 'Gill Sans', sans-serif;
     font-size: 18px;
     padding: 0 20px;
-    color: rgb(33, 36, 41);
+    color: rgb(33, 36, 41);   
     display: block;
     text-decoration: none;
     font-weight: normal; /* Aseguramos que no esté en negrita */
+    
 }
 
 /*Se define el color:background del la letra, cuando pasa el mouse sobre ella */
-.menu .navbar ul li a:hover {
+.menu-m .navbar-main ul li a:hover {
     color: aliceblue;	
 }
-
-#menu {
+ 
+#menu-m {
     display: none;
 }
 
@@ -66,13 +70,13 @@
     height: 75px;
 }
 
-.menu label {
+.menu-m label {
     cursor: pointer;
     display: none;
 }
 
 /*logo provisorio conh1*/
-.menu h1 {
+.menu-m h1 {
     font-style: italic;
     width: 50px;
     padding: 0;
@@ -81,14 +85,14 @@
 
 /* Media query para pantallas con un ancho máximo de 1000px */
 @media (max-width: 940px) {
-    .content {
+    .content-menu {
         min-height: 100px;
     }
-    .menu {
+    .menu-m {
         top: 0;
         padding: 15px;
     }
-    .menu .navbar ul li a {
+    .menu-m .navbar-main ul li a {
 		margin-top: 5px;
         font-size: 18px; /* Reduce el tamaño de la fuente */
         padding: 0 10px; /* Reduce el padding */
@@ -99,17 +103,17 @@
 
 /* Media query para pantallas con un ancho máximo de 700px */
 @media (max-width: 700px) {
-    .content {
+    .content-menu {
         min-height: 100px;
     }
-    .menu {
+    .menu-m {
         top: 0;
         padding: 15px;
     }
     .menu label {
         display: initial;
     }
-    .menu .navbar {
+    .menu-m .navbar-main {
         position: absolute;
         top: 100%;
         left: 0;
@@ -117,14 +121,14 @@
         background: rgb(237, 218, 12);
         display: none;
     }
-    .menu .navbar ul li {
+    .menu-m .navbar-main ul li {
         width: 100%;
     }
-    .menu .navbar ul li a {
+    .menu-m .navbar-main ul li a {
         font-family: 'Gill Sans', sans-serif; /* Aseguramos la misma tipografía */
         font-weight: normal; /* Aseguramos que no esté en negrita */
     }
-    #menu:checked ~ .navbar {
+    #menu-m:checked ~ .navbar-main {
         display: initial;
     }
 }

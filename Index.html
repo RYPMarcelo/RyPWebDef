@@ -21,17 +21,17 @@
 		
 		<!--style personales-->
 		<link rel="stylesheet" href="style.css"/>
-		<link rel="stylesheet" href="style-slider.css"/>
 		<link rel="stylesheet" href="style-menu-bar.css"/>
-		<link rel="stylesheet" href="style-scroll.css"/>
 		<link rel="stylesheet" href="style-footer.css"/>
+		<link rel="stylesheet" href="style-slider.css"/>		
+		<link rel="stylesheet" href="style-scroll.css"/>		
 		<link rel="stylesheet" href="style-icon-hover.css"/>
 		<link rel="stylesheet" href="style-section-dos.css"/>
 		<link rel="stylesheet" href="style-section-tres.css"/>
 		<link rel="stylesheet" href="style-section-destacados.css"/>
 		<link rel="stylesheet" href="whatsapp.css">
 		
-		<!--<script defer src="./eliminarEventos.js"></script>-->
+		
 		<title>Comercializadora R & P</title>
 
 	</head>
@@ -42,33 +42,33 @@
 		que nos indica las opciones que tendra y su logo de empresa
 		 de forma ( RESPONCIVE )-->
 		<header>
-			<div class="content">
+			<div class="content-menu">
 				<!--Logo del menu de inicio de la Empresa-->
-				<div class="menu container-menu">					
+				<div class="menu-m contenedor-menu">					
 					<!--Se incorpora el icono ( fa-solid fa-bars) para la barra reponsive-->
  					<a href ="index.html" class ="enlace"></a>
 
 					<!--imagen logo empresa-->
 					<img src ="../img/logoryp-300x140-01-sin-fondo.png" class="menu-ppal" alt="">						
 
-					<input type="checkbox" id="menu">
-					<label for="menu">
+					<input type="checkbox" id="menu-m">
+					<label for="menu-m">
 						<!--Logo corporativo de Empresa para barra de menu-->		
 						<img src ="" class="menu-icono" alt="">	
 
 						<!--Icono de barra Responcive-->		
 						<i class="fa-solid fa-bars"></i>
 					</label>
-					<nav class="navbar"	>
+					<nav class="navbar-main">
 						<ul>
 							<!--Se indica una clase para dar con el boton remarcado al inicio-->
 							<li><a class="active" href="index.html">INICIO</a></li>
-							<li><a href	="#empresa">EMPRESA</a></li>
-							<li><a href	="#sectores">SECTORES</a></li>							
-							<li><a href	="#destacado">DESTACADOS</a></li>
-							<li><a href	="productos.html">PRODUCTOS</a></li>
-							<li><a href	="catalogos.html">CATALOGOS</a></li>
-							<li><a href	="contacto.html">CONTACTO</a></li>
+							<li><a href="#empresa">EMPRESA</a></li>
+							<li><a href="#sectores">SECTORES</a></li>							
+							<li><a href="#destacado">DESTACADOS</a></li>
+							<li><a href="productos.html">PRODUCTOS</a></li>
+							<li><a href="catalogos.html">CATALOGOS</a></li>
+							<li><a href="contacto.html">CONTACTO</a></li>
 						</ul>
 					</nav>					
 				</div>
@@ -240,7 +240,7 @@
 						<p>articulos destacados</p>
 						<h1>zapatos - botines - botas</h1>					
 					</div>
-					<div class="container">					
+					<div class="container-seccion-tres">					
 						<div class="row">
 							<div class="col s12">
 								<div class="carousel center-align">
@@ -255,14 +255,14 @@
 										<div class="linea-division"></div>
 										<p class="sabor">Lorem ipsum</p>
 										<img src="../img-prod-destacados/165554-150-hw-terrain-pro.webp" alt="">
-								</div>
-								<div class="carousel-item">
+									</div>
+									<div class="carousel-item">
 										<h2 class="subtitulo-1" >Quebec san Lorenzo</h2>
 										<div class="linea-division"></div>
 										<p class="sabor">Lorem ipsum</p>
 										<img src="../img-prod-destacados/166401-150-quebec-san-lorenzo.webp" alt="">
-								</div>
-								<div class="carousel-item">
+									</div>
+									<div class="carousel-item">
 										<h2 class="subtitulo-1" >Botin mujer Ventus pro Beige</h2>
 										<div class="linea-division"></div>
 										<p class="sabor">Lorem ipsum</p>
@@ -280,64 +280,6 @@
 					</div>
 				</section>
 			</div>
-			<!--Creacion del slider de rubros a cuales trabajamos
-			Este se puede utilizar con distintos tipos de imagenes a representar tipo (BOX)-->
-			<!--<div class="slider-container">
-				<div class="slider">
-					<div class="slider-text">
-						<p>Nuestros Vendedores ?</p>
-						<h1>Equipo dedicado a tus necesidades</h1>
-					</div>
-					<div class="slider-images">
-						<div class="slider-img">
-							<img src="../img-personas/persona-1.jfif" alt="1">
-							<h1>Juanjo</h1>
-							<div class="details">
-								<h2>Juan Jose</h2>
-								<p>mail: ventas@comercializadoraryp.cl</p>
-								<h3>wsp : +56 9 5626 2360</h3>								
-							</div>	
-						</div>	
-						<div class="slider-img">
-							<img src="../img-personas/persona-2.jfif" alt="2">
-							<h1>Mariela</h1>	
-							<div class="details">
-								<h2>Mariela Catrileo</h2>
-								<p>mail : mariela@comercializadoraryp.cl</p>
-								<h3>wsp : +56 9 5626 2360</h3>								
-							</div>
-						</div>
-						<div class="slider-img active">
-							<img src="../img-personas/persona-3.jfif" alt="3">
-							<h1>Emilio</h1>	
-							<div class="details">
-								<h2>Emilio Rabanales</h2>
-								<p>mail : emilio@comercializadoraryp.cl</p>
-								<h3>wsp : +56 9 5626 2360</h3>								
-							</div>
-						</div>
-						<div class="slider-img">
-							<img src="../img-personas/persona-4.jfif" alt="4">
-							<h1>Alejandra</h1>
-							<div class="details">
-								<h2>Alejandra Ortega</h2>
-								<p>mail : alejandra@comercializadora.cl</p>
-								<h3>wsp : +56 9 5626 2360</h3>								
-							</div>	
-						</div>
-						<div class="slider-img">
-							<img src="../img-personas/persona-5.jfif" alt="5">
-							<h1>Marcelo</h1>	
-							<div class="details">
-								<h2>Marcelo Pizarro</h2>
-								<p>mail : bypizarro.mpl@comercializadoraryp.cl web3 developer</p>
-								<h3>wsp : +56 9 5626 2360</h3>								
-							</div>
-						</div>																					
-					</div>
-				</div>
-			</div>-->
-
 		</main>
 			<!--Creacion de un scroll con  imagenes secuenciales y stop X imagen
 			 / con esquinas de gradadas o difusivas
@@ -413,7 +355,6 @@
 				<p>Sala de Venta: - <b>Camino a Talagante, Paine 1662, local 1 - Talagante</b></p>
 				<p>Horario Atención en Tienda: - <b>Lunes a Viernes: 9:00 a 18:00 hrs</b></p>
 				<p>Horario Atención en OnLine: - <b>Lunes a Viernes: 9:00 a 20:00 hrs</b></p>
-
 			</div>
 			<div class="box-2">
 				<h2>SIGUENOS</h2>
@@ -450,7 +391,6 @@
 		</div>
 		<div class="grupo-3">
 			<small>&copy; 2024 <b>Comercializadora R&P Ltda</b> - Todos los derechos reservados.</small>
-		</div>
-		
+		</div>		
 	</footer>
 </html>

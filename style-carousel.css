@@ -55,9 +55,7 @@
     font-weight: 600;
     cursor: pointer;
     color: #ffffff81;
-
     transform: translate(0,-50%);
-
     transition: 5s,ease;
     user-select: none;
 }
