@@ -41,6 +41,7 @@ body{
 	color: rgb(218, 199, 199);
 	display: block;
 	text-align: justify;
+	text-transform: uppercase;
 }
 
 .slider-nav-lateral .option:hover {
