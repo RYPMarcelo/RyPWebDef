@@ -11,10 +11,10 @@
 .contenedor-primario-section3{  	
 	justify-content: center;
 	align-items: center;
-	width: auto;
+	width: 100%;
 	height: 800px;
     padding-top: 10px;	
-	background: linear-gradient(to bottom ,rgb(0 0 0/.1),rgb(0 0 0 / .1)), url("../img/imagen-fondo-02.jpg"); 	
+	background: linear-gradient(to bottom ,rgb(0 0 0/.1),rgb(0 0 0 / .1)), url("../img/fondo-08png.png"); 	
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: 100% 100%;		
@@ -131,8 +131,7 @@
 /*--style for carousel 2--*/
 .container {
 	min-height: 50vh;
-	background: linear-gradient(to bottom ,rgb(0 0 0/.1),rgb(0 0 0 / .1)); 
-	
+	background: linear-gradient(to bottom ,rgb(0 0 0/.1),rgb(0 0 0 / .1));	
 	/*background-image: linear-gradient(-45deg,#e3ddd9,#36221c 50%);*/
 }
 

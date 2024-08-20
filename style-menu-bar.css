@@ -47,8 +47,7 @@
     color: rgb(33, 36, 41);   
     display: block;
     text-decoration: none;
-    font-weight: normal; /* Aseguramos que no esté en negrita */
-    
+    font-weight: normal; /* Aseguramos que no esté en negrita */    
 }
 
 /*Se define el color:background del la letra, cuando pasa el mouse sobre ella */
